@@ -36,21 +36,21 @@ def target_width(name: str) -> int:
 
 
 def optimize(src: Path) -> Path:
-    """Downscale and re-encode. PNGs with transparency (the marks) stay PNG."""
-    out = OPTIMIZED / src.name
-    subprocess.run(
-        ["sips", "--resampleWidth", str(target_width(src.name)), str(src), "--out", str(out)],
-        check=True, capture_output=True,
-    )
-    if src.suffix.lower() in {".jpg", ".jpeg", ".webp"}:
-        jpg = out.with_suffix(".jpg")
-        subprocess.run(
-            ["sips", "-s", "format", "jpeg", "-s", "formatOptions", "68", str(out), "--out", str(jpg)],
-            check=True, capture_output=True,
-        )
-        if jpg != out:
-            out.unlink(missing_ok=True)
-        return jpg
+    """Downscale and re-encode.
+
+    PNGs with transparency (the marks) stay PNG. Everything else lands as JPEG,
+    including WebP sources: sips can read WebP but cannot write it, so the
+    resample has to target the .jpg path directly rather than round-tripping.
+    """
+    keep_png = src.suffix.lower() == ".png"
+    out = (OPTIMIZED / src.name).with_suffix(".png" if keep_png else ".jpg")
+
+    cmd = ["sips", "--resampleWidth", str(target_width(src.name))]
+    if not keep_png:
+        cmd += ["-s", "format", "jpeg", "-s", "formatOptions", "68"]
+    cmd += [str(src), "--out", str(out)]
+
+    subprocess.run(cmd, check=True, capture_output=True)
     return out
 
 

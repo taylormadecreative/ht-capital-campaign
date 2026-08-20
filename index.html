@@ -129,7 +129,7 @@
   .hero{
     position:relative;min-height:100svh;
     background:var(--terra);color:var(--sand);
-    display:grid;grid-template-columns:minmax(0,6.4fr) minmax(0,5.6fr);
+    display:grid;grid-template-columns:minmax(0,5.4fr) minmax(0,6.6fr);
     overflow:hidden;
   }
   .hero-copy{
@@ -157,11 +157,16 @@
   .hero-media{position:relative;min-height:60svh;overflow:hidden}
   .hero-media img{
     position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
-    object-position:60% center;filter:contrast(1.04) saturate(1.02);
+    /* Framed so the full monument sign reads; the panel is wide enough to hold it. */
+    object-position:46% center;filter:contrast(1.04) saturate(1.02);
   }
   .hero-media::after{
+    /* No wash over the photograph. Only a short bottom scrim, which the caption
+       and dateline sit in. The copy panel meets the image on a clean edge. */
     content:"";position:absolute;inset:0;
-    background:linear-gradient(90deg, var(--terra) 0%, rgba(41,28,20,0.55) 22%, rgba(41,28,20,0.05) 62%, rgba(59,0,0,0.18) 100%);
+    background:
+      linear-gradient(180deg, rgba(41,28,20,0.55) 0%, rgba(41,28,20,0) 13%),
+      linear-gradient(0deg, rgba(41,28,20,0.62) 0%, rgba(41,28,20,0) 18%);
   }
   .hero .est{
     position:absolute;bottom:1.8rem;right:var(--pad);z-index:3;color:var(--sand);
@@ -178,7 +183,7 @@
   @media (max-width:960px){
     .hero{grid-template-columns:1fr}
     .hero-media{min-height:50svh;order:2}
-    .hero-media::after{background:linear-gradient(180deg, var(--terra) 0%, rgba(41,28,20,0.45) 28%, rgba(41,28,20,0.05) 70%)}
+    .hero-media::after{background:linear-gradient(0deg, rgba(41,28,20,0.62) 0%, rgba(41,28,20,0) 18%)}
     .hero .est{position:static;text-align:right;padding:0 var(--pad) 1.5rem;background:var(--terra)}
   }
 
@@ -542,8 +547,8 @@
       </div>
     </div>
     <div class="hero-media">
-      <img src="assets/r-retail-street.jpg" alt="Architectural rendering of the proposed Huston-Tillotson student housing and retail village at dusk" fetchpriority="high">
-      <p class="caption">Master Plan rendering</p>
+      <img src="assets/campus-hero.webp" alt="The Huston-Tillotson University campus sign and bell tower under an open sky in Austin, Texas" fetchpriority="high">
+      <p class="caption">The campus today</p>
     </div>
     <p class="est">Est. 1875 &middot; Austin, Texas</p>
   </header>
