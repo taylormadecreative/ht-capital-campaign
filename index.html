@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Such a Time as This | The Capital Campaign for Huston-Tillotson University</title>
+<meta name="description" content="150 years of resilience meets a once-in-a-generation opportunity. The capital campaign for Huston-Tillotson University, Austin's first institution of higher education.">
+<!-- Preview build. Figures are preliminary and the campaign is unannounced; keep this out of search results until HT approves. -->
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="For Such a Time as This">
+<meta property="og:description" content="The Capital Campaign for Huston-Tillotson University. Est. 1875, Austin, Texas.">
+<link rel="icon" type="image/png" href="assets/monogram-gold.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..700;1,8..60,300..700&family=Archivo:ital,wdth,wght@0,62..125,300..900;1,62..125,300..900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --maroon:#660100;
+    --brick:#8F0000;
+    --mahogany:#3B0000;
+    --gold:#FFCC00;
+    --lumen:#F2B00D;
+    --honey:#D68A2B;
+    --terra:#291C14;
+    --sable:#61422E;
+    --taupe:#C09780;
+    --sand:#FFFAEB;
+    --ember:#F7E3B8;
+    --eco:#00373E;
+    --grove:#36968A;
+    --fresh:#C7EDBF;
+
+    --serif:'Source Serif 4', Georgia, 'Times New Roman', serif;
+    --sans:'Archivo', 'Helvetica Neue', Arial, sans-serif;
+
+    --ease-out:cubic-bezier(0.23,1,0.32,1);
+    --ease-in-out:cubic-bezier(0.77,0,0.175,1);
+
+    --pad:clamp(1.5rem,5vw,5.5rem);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:var(--sans);
+    background:var(--terra);
+    color:var(--terra);
+    font-size:1.0625rem;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  ::selection{background:var(--gold);color:var(--terra)}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  :focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+
+  h1,h2,h3,.serif{font-family:var(--serif)}
+  .eyebrow{
+    font-family:var(--sans);
+    font-stretch:118%;
+    font-weight:600;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    font-size:0.78rem;
+    max-width:none;
+  }
+  .hero-copy .eyebrow{letter-spacing:0.15em;font-size:0.72rem;font-stretch:110%}
+  p{max-width:65ch}
+
+  /* ---------- Buttons ---------- */
+  .btn{
+    display:inline-block;
+    font-family:var(--sans);
+    font-stretch:112%;
+    font-weight:700;
+    font-size:0.95rem;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    text-decoration:none;
+    padding:1.05rem 2.2rem;
+    border-radius:2px;
+    cursor:pointer;
+    border:none;
+    transition:transform 160ms var(--ease-out), background-color 200ms ease, color 200ms ease, border-color 200ms ease;
+  }
+  .btn:active{transform:scale(0.97)}
+  .btn-gold{background:var(--gold);color:var(--terra)}
+  .btn-ghost{border:1px solid rgba(255,250,235,0.45);color:var(--sand);background:none}
+  .btn-maroon{background:var(--maroon);color:var(--sand)}
+  .btn-outline-dark{border:1px solid var(--terra);color:var(--terra);background:none}
+  @media (hover:hover) and (pointer:fine){
+    .btn-gold:hover{background:var(--lumen)}
+    .btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+    .btn-maroon:hover{background:var(--mahogany)}
+    .btn-outline-dark:hover{background:var(--terra);color:var(--gold)}
+  }
+
+  /* ---------- Nav ---------- */
+  nav{
+    position:fixed;inset:0 0 auto 0;z-index:100;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:1.1rem var(--pad);
+    transition:background-color 300ms ease, box-shadow 300ms ease, padding 300ms ease;
+  }
+  nav.scrolled{
+    background:rgba(41,28,20,0.96);
+    box-shadow:0 1px 0 rgba(255,204,0,0.2);
+    padding-top:0.8rem;padding-bottom:0.8rem;
+  }
+  nav .progress{
+    position:absolute;left:0;bottom:0;height:2px;width:0;
+    background:var(--gold);opacity:0;transition:opacity 300ms ease;
+  }
+  nav.scrolled .progress{opacity:1}
+  nav .brand{display:flex;align-items:center;gap:0.9rem;text-decoration:none}
+  nav .brand img{height:34px;width:auto}
+  nav .brand span{
+    color:var(--sand);font-family:var(--sans);font-stretch:115%;font-weight:600;
+    font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;line-height:1.4;
+  }
+  nav .links{display:flex;align-items:center;gap:2rem}
+  nav .links a{
+    color:var(--sand);text-decoration:none;font-size:0.82rem;font-weight:600;
+    font-stretch:110%;letter-spacing:0.12em;text-transform:uppercase;
+    transition:color 200ms ease;
+  }
+  @media (hover:hover) and (pointer:fine){nav .links a:hover{color:var(--gold)}}
+  nav .links .btn{padding:0.7rem 1.4rem;font-size:0.75rem}
+  @media (max-width:820px){
+    nav .links a:not(.btn){display:none}
+    nav .brand span{display:none}
+  }
+
+  /* ---------- Hero: editorial split ---------- */
+  .hero{
+    position:relative;min-height:100svh;
+    background:var(--terra);color:var(--sand);
+    display:grid;grid-template-columns:minmax(0,6.4fr) minmax(0,5.6fr);
+    overflow:hidden;
+  }
+  .hero-copy{
+    display:flex;flex-direction:column;justify-content:center;
+    padding:clamp(7rem,15vh,10rem) clamp(1.5rem,4.5vw,5rem) clamp(4rem,8vh,6rem);
+    position:relative;z-index:2;
+  }
+  .hero-copy .eyebrow{color:var(--gold);margin-bottom:2.4rem}
+  .hero h1{
+    font-size:clamp(3rem,7.2vw,6.6rem);
+    line-height:1.02;font-weight:400;letter-spacing:-0.018em;
+    max-width:72rem;margin-bottom:2.4rem;
+  }
+  .hero h1 em{font-style:italic;color:var(--gold)}
+  .hero .verse{
+    font-family:var(--serif);font-style:italic;
+    font-size:clamp(1.05rem,1.5vw,1.3rem);line-height:1.6;
+    color:var(--ember);max-width:33rem;margin-bottom:0.9rem;
+  }
+  .hero .verse-ref{
+    color:var(--taupe);font-size:0.8rem;letter-spacing:0.2em;text-transform:uppercase;
+    font-stretch:112%;font-weight:600;margin-bottom:3rem;
+  }
+  .hero .cta-row{display:flex;gap:1rem;flex-wrap:wrap}
+  .hero-media{position:relative;min-height:60svh;overflow:hidden}
+  .hero-media img{
+    position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+    object-position:60% center;filter:contrast(1.04) saturate(1.02);
+  }
+  .hero-media::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(90deg, var(--terra) 0%, rgba(41,28,20,0.55) 22%, rgba(41,28,20,0.05) 62%, rgba(59,0,0,0.18) 100%);
+  }
+  .hero .est{
+    position:absolute;bottom:1.8rem;right:var(--pad);z-index:3;color:var(--sand);
+    font-family:var(--sans);font-stretch:120%;font-weight:600;
+    letter-spacing:0.26em;text-transform:uppercase;font-size:0.72rem;
+    text-shadow:0 1px 10px rgba(41,28,20,0.75);
+  }
+  .hero-media .caption{
+    position:absolute;bottom:1.8rem;left:2rem;z-index:3;
+    color:var(--ember);font-size:0.7rem;letter-spacing:0.16em;text-transform:uppercase;
+    font-stretch:110%;font-weight:600;
+    text-shadow:0 1px 10px rgba(41,28,20,0.9);
+  }
+  @media (max-width:960px){
+    .hero{grid-template-columns:1fr}
+    .hero-media{min-height:50svh;order:2}
+    .hero-media::after{background:linear-gradient(180deg, var(--terra) 0%, rgba(41,28,20,0.45) 28%, rgba(41,28,20,0.05) 70%)}
+    .hero .est{position:static;text-align:right;padding:0 var(--pad) 1.5rem;background:var(--terra)}
+  }
+
+  /* ---------- Values marquee ---------- */
+  .marquee{
+    background:var(--gold);color:var(--terra);overflow:hidden;padding:1.3rem 0;
+    border-top:1px solid var(--terra);border-bottom:1px solid var(--terra);
+  }
+  .marquee-track{display:flex;width:max-content;animation:marquee 44s linear infinite}
+  .marquee-track span{
+    font-family:var(--sans);font-stretch:122%;font-weight:800;
+    font-size:1rem;letter-spacing:0.24em;text-transform:uppercase;
+    padding:0 1.5rem;white-space:nowrap;
+  }
+  .marquee-track .dot{padding:0;color:var(--maroon)}
+  @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+  /* ---------- Sections ---------- */
+  section{padding:clamp(6rem,12vw,11rem) var(--pad)}
+  .measure{max-width:74rem;margin:0 auto}
+
+  /* ---------- Why HT ---------- */
+  .why{background:var(--sand)}
+  .why .eyebrow{color:var(--brick);margin-bottom:2rem}
+  .why h2{
+    font-size:clamp(2.3rem,5.1vw,4.5rem);line-height:1.09;font-weight:400;
+    letter-spacing:-0.01em;max-width:58rem;margin-bottom:3.5rem;
+  }
+  .why h2 .pill{
+    display:inline-block;width:clamp(3.2rem,5.6vw,5.2rem);height:clamp(1.8rem,3.1vw,2.9rem);
+    border-radius:999px;background-size:cover;background-position:center 20%;
+    vertical-align:middle;margin:0 0.3rem;transform:translateY(-0.22rem);
+    box-shadow:inset 0 0 0 2px var(--gold);
+  }
+  .why-cols{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2.5rem,5vw,5rem);margin-bottom:5rem}
+  .why-cols p{margin-bottom:1.4rem}
+  .drop::first-letter{
+    font-family:var(--serif);float:left;font-size:4.3rem;line-height:0.82;
+    padding:0.35rem 0.7rem 0 0;color:var(--maroon);font-weight:600;
+  }
+  @media (max-width:840px){.why-cols{grid-template-columns:1fr}}
+
+  .rankings{border-top:1px solid var(--taupe);max-width:58rem}
+  .rankings li{
+    list-style:none;display:grid;grid-template-columns:5rem 1fr;align-items:baseline;gap:1.8rem;
+    padding:1.5rem 0;border-bottom:1px solid var(--taupe);
+  }
+  .rankings .rk{
+    font-family:var(--serif);font-size:clamp(1.8rem,2.9vw,2.5rem);
+    color:var(--maroon);font-weight:600;font-style:italic;
+  }
+  .rankings .rd{font-size:clamp(1rem,1.5vw,1.25rem);line-height:1.45}
+  .rankings-note{margin-top:1.5rem;color:var(--sable);font-size:0.95rem;font-style:italic;font-family:var(--serif)}
+
+  /* ---------- Litany ---------- */
+  .litany{background:var(--eco);color:var(--sand);text-align:center}
+  .litany .lines{font-family:var(--serif);font-size:clamp(1.9rem,4.4vw,3.8rem);line-height:1.26;font-weight:300}
+  .litany .lines em{color:var(--fresh);font-style:italic}
+  .litany .tail{
+    margin:3rem auto 0;color:var(--fresh);font-family:var(--serif);font-style:italic;
+    font-size:clamp(1.05rem,1.7vw,1.35rem);max-width:44rem;
+  }
+
+  /* ---------- Land ---------- */
+  .land{background:var(--sand)}
+  .land .eyebrow{color:var(--brick);margin-bottom:2rem}
+  .land h2{font-size:clamp(2.3rem,5.1vw,4.5rem);line-height:1.09;font-weight:400;max-width:48rem;margin-bottom:2.5rem}
+  .land-grid{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,6fr);gap:clamp(2.5rem,5vw,5rem);align-items:center;margin-top:3.5rem}
+  .land-grid p{margin-bottom:1.3rem}
+  .land-figs{display:flex;gap:clamp(2rem,4vw,3.5rem);margin:2.5rem 0 0;flex-wrap:wrap}
+  .land-figs div{border-top:2px solid var(--maroon);padding-top:0.9rem}
+  .land-figs .n{font-family:var(--serif);font-size:clamp(2.2rem,3.6vw,3.2rem);line-height:1;color:var(--maroon);font-weight:600}
+  .land-figs .l{font-size:0.8rem;letter-spacing:0.16em;text-transform:uppercase;font-stretch:112%;font-weight:600;color:var(--sable);margin-top:0.4rem}
+  .land-media{overflow:hidden;border-radius:4px}
+  .land-media img{width:100%;height:auto}
+  .land-media figcaption{
+    font-size:0.75rem;letter-spacing:0.14em;text-transform:uppercase;font-stretch:110%;
+    font-weight:600;color:var(--sable);padding-top:0.85rem;
+  }
+  @media (max-width:840px){.land-grid{grid-template-columns:1fr}}
+
+  /* ---------- Moment ---------- */
+  .moment{background:var(--maroon);color:var(--sand);overflow:hidden}
+  .moment .eyebrow{color:var(--gold);margin-bottom:2rem}
+  .moment h2{font-size:clamp(2.2rem,4.9vw,4.3rem);line-height:1.11;font-weight:400;max-width:60rem;margin-bottom:3rem}
+  .moment h2 .big{color:var(--gold);font-style:italic}
+  .moment-grid{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,6fr);gap:clamp(2.5rem,5vw,5rem);align-items:center}
+  .moment-grid p{margin-bottom:1.35rem;color:var(--ember)}
+  .moment-grid p.ignition{
+    font-family:var(--serif);font-size:clamp(1.45rem,2.5vw,2rem);line-height:1.35;
+    color:var(--sand);margin-top:2.4rem;
+  }
+  .moment-grid p.ignition em{color:var(--gold)}
+  .moment-media{overflow:hidden;border-radius:4px}
+  .moment-media img{width:100%;height:100%;object-fit:cover}
+  @media (max-width:840px){.moment-grid{grid-template-columns:1fr}}
+
+  /* ---------- Campus explorer ---------- */
+  .explorer{background:var(--terra);color:var(--sand);overflow:hidden}
+  .explorer .eyebrow{color:var(--gold);margin-bottom:2rem}
+  .explorer h2{font-size:clamp(2.2rem,4.9vw,4.3rem);line-height:1.1;font-weight:400;max-width:52rem;margin-bottom:1.6rem}
+  .explorer .lede{color:var(--ember);margin-bottom:clamp(3rem,5vw,4.5rem);max-width:56ch}
+  .xp{display:grid;grid-template-columns:minmax(0,4.4fr) minmax(0,7.6fr);gap:clamp(2rem,4vw,4rem);align-items:start}
+
+  .xp-list{list-style:none;border-top:1px solid rgba(192,151,128,0.3)}
+  .xp-list button{
+    width:100%;background:none;border:none;cursor:pointer;text-align:left;
+    padding:1.35rem 0.9rem 1.35rem 0;
+    border-bottom:1px solid rgba(192,151,128,0.3);
+    color:var(--taupe);font-family:var(--sans);
+    display:grid;grid-template-columns:2.4rem 1fr;gap:0.9rem;align-items:baseline;
+    transition:color 220ms ease, padding-left 320ms var(--ease-out), background-color 220ms ease;
+  }
+  .xp-list button .idx{
+    font-family:var(--serif);font-style:italic;font-size:1rem;
+    transition:color 220ms ease;
+  }
+  .xp-list button .nm{
+    font-size:clamp(1.05rem,1.6vw,1.28rem);font-weight:600;font-stretch:104%;
+    line-height:1.3;transition:color 220ms ease;
+  }
+  .xp-list button .rg{
+    grid-column:2;font-family:var(--serif);font-style:italic;font-size:0.95rem;
+    color:var(--taupe);margin-top:0.2rem;transition:color 220ms ease;
+  }
+  @media (hover:hover) and (pointer:fine){
+    .xp-list button:hover{color:var(--ember);padding-left:0.7rem}
+    .xp-list button:hover .nm{color:var(--sand)}
+  }
+  .xp-list button:active{transform:none}
+  .xp-list button[aria-selected="true"]{
+    color:var(--sand);padding-left:0.9rem;
+    background:linear-gradient(90deg, rgba(255,204,0,0.1), rgba(255,204,0,0));
+  }
+  .xp-list button[aria-selected="true"] .idx,
+  .xp-list button[aria-selected="true"] .nm{color:var(--gold)}
+  .xp-list button[aria-selected="true"] .rg{color:var(--ember)}
+
+  .xp-stage{position:relative}
+  .xp-frame{
+    position:relative;width:100%;aspect-ratio:1372/708;overflow:hidden;
+    border-radius:4px;background:var(--mahogany);
+  }
+  .xp-frame img{
+    position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+    opacity:0;transform:scale(1.05);filter:blur(6px);
+    transition:opacity 420ms var(--ease-out), transform 700ms var(--ease-out), filter 420ms var(--ease-out);
+  }
+  .xp-frame img.on{opacity:1;transform:scale(1);filter:blur(0)}
+  .xp-frame::after{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    box-shadow:inset 0 -80px 90px -40px rgba(41,28,20,0.75);
+  }
+  .xp-body{padding-top:1.8rem;min-height:11rem}
+  .xp-body h3{font-size:clamp(1.5rem,2.6vw,2.1rem);line-height:1.2;font-weight:400;color:var(--gold);margin-bottom:0.7rem}
+  .xp-body p{color:var(--ember);margin-bottom:1rem;max-width:60ch}
+  .xp-body .out{
+    font-size:0.9rem;color:var(--taupe);border-left:none;
+    display:flex;flex-wrap:wrap;gap:0.5rem 1.4rem;margin-top:1.2rem;max-width:none;
+  }
+  .xp-body .out span{
+    font-size:0.74rem;letter-spacing:0.13em;text-transform:uppercase;
+    font-stretch:110%;font-weight:600;color:var(--taupe);
+  }
+  .xp-body .out span::before{content:"";display:inline-block;width:5px;height:5px;border-radius:999px;background:var(--gold);margin-right:0.55rem;vertical-align:middle}
+  .xp-hint{
+    margin-top:1.4rem;font-size:0.74rem;letter-spacing:0.16em;text-transform:uppercase;
+    font-stretch:110%;font-weight:600;color:var(--taupe);
+  }
+  .xp-credit{
+    margin-top:0.85rem;font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;
+    font-stretch:110%;font-weight:600;color:var(--taupe);
+  }
+  @media (max-width:880px){
+    .xp{grid-template-columns:1fr}
+    .xp-stage{order:-1}
+  }
+
+  /* ---------- Scripture ---------- */
+  .scripture{background:var(--mahogany);color:var(--sand);text-align:center}
+  .scripture .quote{
+    font-family:var(--serif);font-style:italic;font-weight:300;
+    font-size:clamp(1.75rem,4.1vw,3.6rem);line-height:1.32;max-width:54rem;margin:0 auto;
+  }
+  .scripture .quote .w{opacity:0.13}
+  .scripture .ref{
+    display:block;margin-top:2.6rem;color:var(--gold);font-family:var(--sans);
+    font-stretch:118%;font-weight:600;letter-spacing:0.26em;text-transform:uppercase;font-size:0.82rem;
+  }
+  .scripture .belongs{
+    margin:4.5rem auto 0;max-width:40rem;font-family:var(--serif);
+    font-size:clamp(1.1rem,1.8vw,1.45rem);color:var(--ember);line-height:1.55;
+  }
+
+  /* ---------- Priorities ---------- */
+  .priorities{background:var(--sand);padding-bottom:clamp(3rem,6vw,5rem)}
+  .priorities-head{max-width:74rem;margin:0 auto clamp(3.5rem,6vw,5rem)}
+  .priorities-head .eyebrow{color:var(--brick);margin-bottom:2rem}
+  .priorities-head h2{font-size:clamp(2.3rem,5.1vw,4.5rem);line-height:1.09;font-weight:400;max-width:54rem;margin-bottom:2.2rem}
+
+  /* proportional scale bar */
+  .scale{max-width:74rem;margin:0 auto clamp(4rem,7vw,6rem)}
+  .scale-bar{display:flex;height:3.4rem;border-radius:3px;overflow:hidden;width:100%}
+  .scale-bar div{
+    height:100%;width:0;
+    display:flex;align-items:center;justify-content:center;
+    font-size:0.74rem;letter-spacing:0.14em;text-transform:uppercase;font-stretch:112%;font-weight:700;
+    white-space:nowrap;overflow:hidden;
+  }
+  .s1{background:var(--mahogany);color:var(--gold)}
+  .s2{background:var(--brick);color:var(--ember)}
+  .s3{background:var(--honey);color:var(--terra)}
+  .s4{background:var(--gold);color:var(--terra)}
+  .scale-key{display:flex;flex-wrap:wrap;gap:0.6rem 2rem;margin-top:1.3rem}
+  .scale-key div{font-size:0.82rem;color:var(--sable);display:flex;align-items:center;gap:0.55rem}
+  .scale-key i{width:0.75rem;height:0.75rem;border-radius:2px;display:inline-block;flex:none}
+  .scale-note{margin-top:1.6rem;font-family:var(--serif);font-style:italic;color:var(--sable);font-size:0.95rem}
+
+  .stack{max-width:76rem;margin:0 auto}
+  .p-card{
+    position:sticky;top:5.5rem;border-radius:6px;
+    padding:clamp(2.2rem,4.2vw,3.8rem);margin-bottom:2.5rem;
+    display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(2rem,4vw,3.5rem);
+    box-shadow:0 -14px 44px rgba(41,28,20,0.2);will-change:transform;
+  }
+  .p-card .numeral{font-family:var(--serif);font-style:italic;font-weight:600;font-size:clamp(2.4rem,4.2vw,3.6rem);line-height:1;margin-bottom:1rem}
+  .p-card h3{font-size:clamp(1.75rem,3.1vw,2.7rem);line-height:1.13;font-weight:400;margin-bottom:0.7rem}
+  .p-card .range{font-family:var(--sans);font-stretch:115%;font-weight:700;letter-spacing:0.13em;text-transform:uppercase;font-size:0.85rem;margin-bottom:1.7rem}
+  .p-card p{margin-bottom:1.15rem;font-size:1rem}
+  .p-card ul{margin:1.4rem 0 0;padding:0}
+  .p-card li{
+    list-style:none;padding:0.8rem 0;border-bottom:1px solid;
+    display:flex;justify-content:space-between;gap:1.5rem;align-items:baseline;font-size:0.97rem;
+  }
+  .p-card li .sub-range{white-space:nowrap;font-family:var(--serif);font-style:italic;font-size:0.94rem}
+  .p-card .p-media{overflow:hidden;border-radius:4px;min-height:15rem}
+  .p-card .p-media img{width:100%;height:100%;object-fit:cover;transition:transform 700ms var(--ease-out)}
+  @media (hover:hover) and (pointer:fine){.p-card:hover .p-media img{transform:scale(1.05)}}
+  .p-card blockquote{font-family:var(--serif);font-style:italic;font-size:clamp(1.15rem,1.9vw,1.45rem);line-height:1.45;margin:1.6rem 0 0}
+
+  .p-one{background:var(--mahogany);color:var(--sand)}
+  .p-one .numeral,.p-one .range{color:var(--gold)}
+  .p-one p{color:var(--ember)}
+  .p-one li{border-color:rgba(247,227,184,0.24);color:var(--sand)}
+  .p-one li .sub-range{color:var(--gold)}
+
+  .p-two{background:var(--ember);color:var(--terra)}
+  .p-two .numeral,.p-two .range{color:var(--brick)}
+  .p-two li{border-color:rgba(97,66,46,0.28)}
+  .p-two li .sub-range{color:var(--brick)}
+  .p-two blockquote{color:var(--maroon)}
+
+  .p-three{background:var(--eco);color:var(--sand)}
+  .p-three .numeral,.p-three .range{color:var(--fresh)}
+  .p-three p{color:rgba(255,250,235,0.88)}
+
+  .p-four{background:var(--terra);color:var(--sand)}
+  .p-four .numeral,.p-four .range{color:var(--gold)}
+  .p-four p{color:var(--ember)}
+  .p-four blockquote{color:var(--gold)}
+
+  @media (max-width:880px){
+    .p-card{grid-template-columns:1fr;position:relative;top:0}
+    .p-card .p-media{min-height:12rem;order:-1}
+  }
+
+  /* ---------- Yours ---------- */
+  .yours{background:var(--sand)}
+  .yours-grid{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,6fr);gap:clamp(3rem,6vw,6rem);max-width:76rem;margin:0 auto;align-items:start}
+  .yours .eyebrow{color:var(--brick);margin-bottom:2rem}
+  .yours h2{font-size:clamp(2.1rem,4.5vw,3.8rem);line-height:1.13;font-weight:400;margin-bottom:2rem}
+  .yours .no-list p{font-family:var(--serif);font-size:clamp(1.1rem,1.8vw,1.4rem);line-height:1.6;margin-bottom:0.35rem;color:var(--sable)}
+  .yours .no-list p.turn{color:var(--maroon);font-style:italic;margin-top:1.6rem}
+  .carousel{
+    background:var(--maroon);color:var(--sand);border-radius:6px;
+    padding:clamp(2.2rem,4vw,3.4rem);display:flex;flex-direction:column;justify-content:space-between;min-height:24rem;
+  }
+  .carousel .slide{display:none}
+  .carousel .slide.active{display:block;animation:slideIn 420ms var(--ease-out)}
+  @keyframes slideIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+  .carousel blockquote{font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(1.45rem,2.5vw,2.1rem);line-height:1.4}
+  .carousel .attr{margin-top:2rem;color:var(--gold);font-size:0.78rem;letter-spacing:0.16em;text-transform:uppercase;font-stretch:112%;font-weight:600}
+  .carousel .ctrl{display:flex;gap:0.8rem;margin-top:2.4rem;align-items:center}
+  .carousel .ctrl button{
+    background:none;border:1px solid rgba(255,250,235,0.4);color:var(--sand);
+    width:3rem;height:3rem;border-radius:999px;font-size:1.05rem;cursor:pointer;
+    transition:transform 160ms var(--ease-out), border-color 200ms ease, color 200ms ease;
+  }
+  @media (hover:hover) and (pointer:fine){.carousel .ctrl button:hover{border-color:var(--gold);color:var(--gold)}}
+  .carousel .ctrl button:active{transform:scale(0.94)}
+  .carousel .count{margin-left:0.6rem;font-family:var(--serif);font-style:italic;color:var(--ember);font-size:0.95rem}
+  @media (max-width:880px){.yours-grid{grid-template-columns:1fr}}
+
+  /* ---------- Action ---------- */
+  .action{
+    background:var(--gold);color:var(--terra);text-align:center;
+    padding-top:clamp(7rem,13vw,12rem);padding-bottom:clamp(7rem,13vw,12rem);
+  }
+  .action h2{font-size:clamp(2.8rem,7.6vw,6.6rem);line-height:1;font-weight:400;letter-spacing:-0.018em;margin-bottom:2.2rem}
+  .action h2 em{font-style:italic;color:var(--maroon)}
+  .action p{margin:0 auto 3rem;max-width:42rem;font-family:var(--serif);font-size:clamp(1.1rem,1.8vw,1.42rem);line-height:1.55}
+  .action .cta-row{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--terra);color:var(--taupe);padding:clamp(4rem,7vw,6rem) var(--pad) 3rem}
+  footer .f-grid{max-width:76rem;margin:0 auto;display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:3rem;align-items:end}
+  footer img{width:min(25rem,70vw);height:auto;margin-bottom:2rem}
+  footer .tagline{font-family:var(--serif);font-style:italic;color:var(--ember);font-size:1.12rem}
+  footer .f-right{text-align:right;font-size:0.9rem;line-height:1.9}
+  footer .f-right a{color:var(--gold);text-decoration:none}
+  footer .f-right a:hover{text-decoration:underline}
+  footer .credit{
+    max-width:76rem;margin:3.5rem auto 0;padding-top:1.6rem;
+    border-top:1px solid rgba(192,151,128,0.22);font-size:0.78rem;color:var(--taupe);
+    display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap;
+  }
+  @media (max-width:800px){
+    footer .f-grid{grid-template-columns:1fr}
+    footer .f-right{text-align:left}
+  }
+
+  .reveal{opacity:0;transform:translateY(26px)}
+
+  @media (prefers-reduced-motion: reduce){
+    .marquee-track{animation:none}
+    .reveal{opacity:1 !important;transform:none !important}
+    .xp-frame img{transition:opacity 160ms linear;transform:none;filter:none}
+    .xp-frame img.on{transform:none}
+    .carousel .slide.active{animation:none}
+    html{scroll-behavior:auto}
+  }
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <span class="progress" id="navProgress" aria-hidden="true"></span>
+  <a class="brand" href="#top">
+    <img src="assets/monogram-gold.png" alt="">
+    <span>Huston-Tillotson<br>University</span>
+  </a>
+  <div class="links">
+    <a href="#why">Why HT</a>
+    <a href="#moment">The Moment</a>
+    <a href="#explorer">The Plan</a>
+    <a href="#priorities">Priorities</a>
+    <a class="btn btn-gold" href="https://htu.edu/institutional-advancement/" target="_blank" rel="noopener">Make a Gift</a>
+  </div>
+</nav>
+
+<main id="top" style="overflow-x:hidden;width:100%;max-width:100%">
+
+  <!-- ATTENTION -->
+  <header class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">The Capital Campaign for Huston-Tillotson University</p>
+      <h1 id="heroTitle">For such a <em>time</em> as this</h1>
+      <p class="verse">&ldquo;And who knows but that you have come to your position for such a time as this?&rdquo;</p>
+      <p class="verse-ref">Esther 4:14</p>
+      <div class="cta-row">
+        <a class="btn btn-gold" href="https://htu.edu/institutional-advancement/" target="_blank" rel="noopener">Make a Gift</a>
+        <a class="btn btn-ghost" href="#why">Read the Case</a>
+      </div>
+    </div>
+    <div class="hero-media">
+      <img src="assets/r-retail-street.jpg" alt="Architectural rendering of the proposed Huston-Tillotson student housing and retail village at dusk" fetchpriority="high">
+      <p class="caption">Master Plan rendering</p>
+    </div>
+    <p class="est">Est. 1875 &middot; Austin, Texas</p>
+  </header>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track" id="marqueeTrack">
+      <span>Brightness</span><span class="dot">&#9670;</span>
+      <span>Bravery</span><span class="dot">&#9670;</span>
+      <span>Benevolence</span><span class="dot">&#9670;</span>
+      <span>Competence</span><span class="dot">&#9670;</span>
+      <span>Collaboration</span><span class="dot">&#9670;</span>
+      <span>Spiritual Grounding</span><span class="dot">&#9670;</span>
+    </div>
+  </div>
+
+  <!-- INTEREST -->
+  <section class="why" id="why">
+    <div class="measure">
+      <p class="eyebrow reveal">Why HT? Why now?</p>
+      <h2 class="reveal">A <span class="pill" style="background-image:url('assets/portrait-1.jpg')"></span> mosaic community
+        <span class="pill" style="background-image:url('assets/portrait-2.jpg')"></span> of learners,
+        150 years <span class="pill" style="background-image:url('assets/portrait-3.jpg')"></span> in the making.</h2>
+      <div class="why-cols">
+        <div class="reveal">
+          <p class="drop">Huston-Tillotson was founded in 1875. We were here before Austin had skyscrapers. Before SXSW. Before the tech companies. Before anyone stood in a two-hour line for barbecue. Before Austin became Austin.</p>
+          <p>HT is Austin's first institution of higher education and its third oldest business. Over 150 years, one of America's most talked-about cities literally grew up around us, and we are still here: on the same historic hill, looking out over one of the most dynamic economic centers in America.</p>
+          <p>HT has survived Reconstruction, segregation, world wars, the Great Depression, recessions, social upheaval, technological revolutions, and a global pandemic. Still teaching. Still believing. Still serving. Still standing on this hill.</p>
+        </div>
+        <div class="reveal">
+          <p>HT exists to cultivate the forerunners of innovation. Our students come from Texas, California, across America and around the world, and together they form a mosaic community of learners. They become scientists, teachers, entrepreneurs, researchers, business leaders, public servants, and community builders.</p>
+          <p>But the world doesn't just need smarter people. It needs better people. At HT, education has never been separated from faith, character, and service. We want brilliant scientists who understand ethics, entrepreneurs who understand stewardship, and leaders who know that sometimes the more important question isn't &ldquo;Can I?&rdquo; but &ldquo;Should I?&rdquo;</p>
+          <p>Austin isn't simply our address. Austin is our classroom. Students are surrounded by the companies, entrepreneurs, healthcare systems, and industries shaping the future, right outside the front gate.</p>
+        </div>
+      </div>
+      <ul class="rankings reveal">
+        <li><span class="rk">No.&thinsp;1</span><span class="rd">Private HBCU in Texas</span></li>
+        <li><span class="rk">No.&thinsp;2</span><span class="rd">HBCU in Texas</span></li>
+        <li><span class="rk">No.&thinsp;1</span><span class="rd">HBCU in return on investment</span></li>
+        <li><span class="rk serif">&#43;</span><span class="rd">Nationally recognized for social mobility</span></li>
+      </ul>
+      <p class="rankings-note reveal">But rankings aren't the real victory. Students are.</p>
+    </div>
+  </section>
+
+  <section class="litany">
+    <div class="lines reveal">
+      <div>We educate the <em>mind</em>.</div>
+      <div>We develop the <em>skill</em>.</div>
+      <div>We nurture the <em>spirit</em>.</div>
+    </div>
+    <p class="tail reveal">And then we send graduates into the world prepared to do something meaningful with all three. When soul, competence, and character walk into the workplace together, the world gets better.</p>
+  </section>
+
+  <!-- The land -->
+  <section class="land">
+    <div class="measure">
+      <p class="eyebrow reveal">We have something urban universities dream about</p>
+      <h2 class="reveal">Land. On our historic campus, overlooking downtown Austin.</h2>
+      <div class="land-grid">
+        <div class="reveal">
+          <p>Not somewhere miles outside the city. Not property we hope to buy someday. At a time when urban universities around the country are struggling to find room to expand, HT has the ability to build.</p>
+          <p>God blessed us with some room on this hill. Now it's our responsibility to be good stewards of it. And maybe, just maybe, HT has been sitting on this land all these years for a moment exactly like this one.</p>
+          <div class="land-figs">
+            <div><div class="n">19.2</div><div class="l">Acres, main campus</div></div>
+            <div><div class="n">5.4</div><div class="l">Acres, west campus</div></div>
+            <div><div class="n">2025</div><div class="l">Master Plan completed</div></div>
+          </div>
+        </div>
+        <figure class="land-media reveal">
+          <img src="assets/r-land-aerial.jpg" alt="Aerial site plan outlining the 19.2-acre main campus and 5.4-acre west campus in East Austin" loading="lazy">
+          <figcaption>Campus Master Plan &middot; Main and West Campus boundaries</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESIRE: the Moody moment -->
+  <section class="moment" id="moment">
+    <div class="measure">
+      <p class="eyebrow reveal">Then came a moment that changed everything</p>
+      <h2 class="reveal">The Moody Foundation made an extraordinary <span class="big">$150 million</span> investment in Huston-Tillotson. The largest single gift ever made to an HBCU.</h2>
+      <div class="moment-grid">
+        <div class="reveal">
+          <p>They looked at our students. Our leadership. Our location. Our plans. Our history. Our possibilities. And they said, &ldquo;We're in.&rdquo;</p>
+          <p>We are profoundly grateful, but our faith teaches us something important about blessings: blessings come with responsibility. What has been entrusted to us isn't simply something to celebrate. It is something to steward. Something to multiply. Something to use in service of others.</p>
+          <p>Of that gift, $100 million is already set aside to turn the Master Plan into reality.</p>
+          <p class="ignition">The Moody investment wasn't the finish line.<br><em>It was ignition.</em></p>
+        </div>
+        <div class="moment-media reveal" id="moodyMedia">
+          <img src="assets/wallace-students.jpg" alt="President Melva K. Wallace with Huston-Tillotson students" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive campus explorer -->
+  <section class="explorer" id="explorer">
+    <div class="measure">
+      <p class="eyebrow reveal">The Master Plan, completed 2025</p>
+      <h2 class="reveal">HT is not asking you to fund a vague dream.</h2>
+      <p class="lede reveal">The renderings show exactly what the future of HT should look like. Choose a project to see it.</p>
+
+      <div class="xp reveal">
+        <div>
+          <ul class="xp-list" id="xpList" role="tablist" aria-label="Master Plan projects"></ul>
+          <p class="xp-hint">Use arrow keys to move between projects</p>
+        </div>
+        <div class="xp-stage">
+          <div class="xp-frame" id="xpFrame"></div>
+          <p class="xp-credit">Rendering &middot; McElroy Architecture and Smallwood</p>
+          <div class="xp-body" id="xpBody" aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripture scrub -->
+  <section class="scripture" id="scripture">
+    <blockquote class="quote" id="scrubQuote">More than 2,000 years ago, a young woman named Esther found herself unexpectedly positioned to influence the future of her people. She had access. She had opportunity. She had a decision to make.</blockquote>
+    <span class="ref">That question belongs to Huston-Tillotson now</span>
+    <p class="belongs reveal">Why this university? Why this city? Why this land? Why this momentum? Why these students? Why now? Perhaps after 150 years of preparation, perseverance, prayer, and possibility, Huston-Tillotson has arrived at this moment for such a time as this. And you have, too.</p>
+  </section>
+
+  <!-- Priorities -->
+  <section class="priorities" id="priorities">
+    <div class="priorities-head">
+      <p class="eyebrow reveal">Four investment priorities</p>
+      <h2 class="reveal">We are not funding buildings. We are funding an ecosystem.</h2>
+      <p class="reveal">The <em>From First to Foremost</em> strategic plan, led by President Wallace, is the framework. This campaign puts the resources behind that vision. Funding needed across the four priorities could reasonably approach $600 to $750 million, depending on final facility scope, scholarship cohort size, and endowment assumptions.</p>
+    </div>
+
+    <div class="scale reveal" id="scaleWrap">
+      <div class="scale-bar" id="scaleBar" role="img" aria-label="Relative scale of the four funding priorities: Campus and Master Plan 300 to 400 million; Student Success and Scholarships 175 to 225 million; Academic Innovation 75 to 100 million; Endowment 100 to 150 million.">
+        <div class="s1" data-w="46">I</div>
+        <div class="s2" data-w="27">II</div>
+        <div class="s3" data-w="11">III</div>
+        <div class="s4" data-w="16">IV</div>
+      </div>
+      <div class="scale-key">
+        <div><i style="background:var(--mahogany)"></i>I. Campus &amp; Master Plan &middot; $300&ndash;400M</div>
+        <div><i style="background:var(--brick)"></i>II. Student Success &amp; Scholarships &middot; $175&ndash;225M</div>
+        <div><i style="background:var(--honey)"></i>III. Academic Innovation &middot; $75&ndash;100M</div>
+        <div><i style="background:var(--gold)"></i>IV. Endowment &amp; Institutional Strength &middot; $100&ndash;150M</div>
+      </div>
+      <p class="scale-note">Preliminary ranges. Segment widths show relative scale, not a committed total.</p>
+    </div>
+
+    <div class="stack">
+
+      <article class="p-card p-one">
+        <div>
+          <div class="numeral">I.</div>
+          <h3>Building the Future</h3>
+          <p class="range">Campus &amp; Master Plan &middot; $300&ndash;400 million</p>
+          <p>The Master Plan was completed in 2025 and fully funded by the United Methodist Church's Black College Fund. HT controls developable land on its historic campus in downtown Austin, and in one of America's most dynamic urban markets, land is usually the obstacle to transformational campus development.</p>
+          <ul>
+            <li>Student Housing &plus; Retail Village, approx. 800 beds <span class="sub-range">$100&ndash;140M</span></li>
+            <li>The HT Arena, 5,500 seats <span class="sub-range">$100&ndash;150M</span></li>
+            <li>Academic Building &plus; Student Union <span class="sub-range">$75&ndash;100M</span></li>
+            <li>Preserve Bluebonnet Hill <span class="sub-range">$25&ndash;40M</span></li>
+            <li>Center for Philanthropy &amp; Innovation <span class="sub-range">$35&ndash;50M</span></li>
+          </ul>
+        </div>
+        <div class="p-media"><img src="assets/r-housing-retail.jpg" alt="Rendering of student housing above street-level retail" loading="lazy"></div>
+      </article>
+
+      <article class="p-card p-two">
+        <div>
+          <div class="numeral">II.</div>
+          <h3>Finishing What We Start</h3>
+          <p class="range">Student Success &amp; Scholarships &middot; $175&ndash;225 million</p>
+          <p>Buildings change campuses. Scholarships change families. No academically successful HT student should reach the final two years and have money be the reason they cannot finish.</p>
+          <ul>
+            <li>Meet Me Halfway, expanding Ross Moody Finishing the Last Mile <span class="sub-range">$125&ndash;175M</span></li>
+            <li>Ram Training Camp, the six-week summer bridge <span class="sub-range">$30&ndash;40M</span></li>
+            <li>Student Scholarship, Persistence &amp; Opportunity Fund <span class="sub-range">$15&ndash;25M</span></li>
+          </ul>
+          <blockquote>&ldquo;Work hard. Stay focused. Complete your sophomore year, and the generosity of the friends of HT will cover the tuition for your junior and senior year.&rdquo;</blockquote>
+        </div>
+        <div class="p-media"><img src="assets/commencement.jpg" alt="President Wallace with a graduate at commencement" loading="lazy"></div>
+      </article>
+
+      <article class="p-card p-three">
+        <div>
+          <div class="numeral">III.</div>
+          <h3>Creating What Comes Next</h3>
+          <p class="range">Academic Innovation &amp; Entrepreneurship &middot; $75&ndash;100 million</p>
+          <p>An Academic Innovation Endowment for new programs, faculty development, laboratories, technology, certifications, and emerging workforce initiatives, so a new academic idea doesn't have to compete for already limited operating dollars.</p>
+          <p>HT founded and hosts the HBCU AI Conference &amp; Training Summit. The inaugural gathering drew representatives from 20 HBCUs and more than 400 attendees; the 2026 summit exceeded 600. Among surveyed HBCU students, 98% already use AI and 60% want formal AI coursework.</p>
+          <p>HT shouldn't simply talk about the future. HT should have the resources to teach it.</p>
+        </div>
+        <div class="p-media"><img src="assets/student-laptop.jpg" alt="Huston-Tillotson student studying in the library" loading="lazy"></div>
+      </article>
+
+      <article class="p-card p-four">
+        <div>
+          <div class="numeral">IV.</div>
+          <h3>Forever HT</h3>
+          <p class="range">Endowment &amp; Institutional Strength &middot; $100&ndash;150 million</p>
+          <p>The most transformative campaigns do two things at once: they change what you can see, and strengthen what you cannot. A substantial unrestricted endowment gives future HT leaders the resources to respond to opportunities no one today can predict.</p>
+          <p>HT should never again have to choose between having a great idea and having the resources to pursue it.</p>
+          <blockquote>Buildings are visible. An endowment is endurance.</blockquote>
+        </div>
+        <div class="p-media"><img src="assets/students-library.jpg" alt="Huston-Tillotson students on campus" loading="lazy"></div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Yours -->
+  <section class="yours">
+    <div class="yours-grid">
+      <div>
+        <p class="eyebrow reveal">This is your campaign, too</p>
+        <h2 class="reveal">You don't have to live in Austin to invest in Huston-Tillotson.</h2>
+        <div class="no-list reveal">
+          <p>You don't have to have attended HT.</p>
+          <p>You don't have to be from Texas.</p>
+          <p>You don't even have to know all the words to &ldquo;Deep in the Heart of Texas.&rdquo;</p>
+          <p class="turn">You just have to believe that talent is everywhere, even when opportunity isn't.</p>
+        </div>
+      </div>
+      <div class="carousel reveal">
+        <div>
+          <div class="slide active">
+            <blockquote>&ldquo;That student might come from Houston. Or Harlem. Or Haiti. Or Honduras. Talent doesn't stop at the Texas state line. Neither does impact.&rdquo;</blockquote>
+          </div>
+          <div class="slide">
+            <blockquote>&ldquo;We have 150 years of receipts. No matter the historical context, HT is still here. Still teaching, believing, serving, praying, and still sending graduates into the world.&rdquo;</blockquote>
+          </div>
+          <div class="slide">
+            <blockquote>&ldquo;For years, the question might have been, what can we afford to do? Today, the question is, what are we called to do?&rdquo;</blockquote>
+          </div>
+        </div>
+        <div>
+          <p class="attr">From the Case for Support &middot; Dr. Melva K. Wallace, President &amp; CEO</p>
+          <div class="ctrl">
+            <button type="button" id="prevSlide" aria-label="Previous quote">&larr;</button>
+            <button type="button" id="nextSlide" aria-label="Next quote">&rarr;</button>
+            <span class="count" id="slideCount">1 / 3</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACTION -->
+  <section class="action">
+    <h2 class="reveal">Join us <em>in it.</em></h2>
+    <p class="reveal">We have the vision, the students, the land, the city, the momentum, and 150 years of proof. Now it is time to build. The question isn't simply what HT will do with this moment. The question is who will join us in it.</p>
+    <div class="cta-row reveal">
+      <a class="btn btn-maroon" href="https://htu.edu/institutional-advancement/" target="_blank" rel="noopener">Make a Gift</a>
+      <a class="btn btn-outline-dark" href="https://htu.edu/institutional-advancement/" target="_blank" rel="noopener">Contact Advancement</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="f-grid">
+    <div>
+      <img src="assets/wordmark-gold.png" alt="Huston-Tillotson University">
+      <p class="tagline">Where every soul finds its strength.</p>
+    </div>
+    <div class="f-right">
+      900 Chicon Street, Austin, Texas 78702<br>
+      <a href="https://htu.edu" target="_blank" rel="noopener">HTU.EDU</a><br>
+      <a href="https://htu.edu/institutional-advancement/" target="_blank" rel="noopener">Institutional Advancement</a>
+    </div>
+  </div>
+  <div class="credit">
+    <span>For Such a Time as This &middot; The Capital Campaign for Huston-Tillotson University</span>
+    <span>Master Plan renderings by McElroy Architecture and Smallwood</span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+(function () {
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------- Nav ---------- */
+  const nav = document.getElementById('nav');
+  const progress = document.getElementById('navProgress');
+  let ticking = false;
+  function onScroll() {
+    nav.classList.toggle('scrolled', scrollY > 40);
+    const max = document.documentElement.scrollHeight - innerHeight;
+    progress.style.width = (max > 0 ? Math.min(1, scrollY / max) * 100 : 0) + '%';
+    ticking = false;
+  }
+  addEventListener('scroll', () => {
+    if (!ticking) { ticking = true; requestAnimationFrame(onScroll); }
+  }, {passive:true});
+  onScroll();
+
+  /* ---------- Marquee seamless loop ---------- */
+  const track = document.getElementById('marqueeTrack');
+  track.innerHTML += track.innerHTML;
+
+  /* ---------- Campus explorer ---------- */
+  const PROJECTS = [
+    {
+      name:'Student Housing + Retail Village',
+      range:'$100–140 million',
+      img:'assets/r-retail-street.jpg',
+      alt:'Rendering of a pedestrian retail street at dusk beneath student housing',
+      body:'HT has reached a simple but consequential constraint: we need more beds. Today there are 440 beds on campus across Beard-Burrows and Allen-Fraiser, plus 155 rented from St. Edward’s. The vision goes further than another residence hall: roughly 800 modern beds above an active street-level retail environment of restaurants, coffee shops, banking, salons, and professional services. Students would not simply live there. They would live in a community.',
+      out:['Enrollment capacity','Recurring housing revenue','Commercial lease revenue','Connection to East Austin']
+    },
+    {
+      name:'The HT Arena',
+      range:'$100–150 million',
+      img:'assets/r-arena-facade.jpg',
+      alt:'Master Plan rendering: a long stone facade with a lit entry portal and HT 150 banners',
+      body:'Not simply an athletics facility. We are conceiving it as an economic asset. A 5,500-seat multipurpose arena hosts HT basketball and athletics while creating opportunity for concerts, commencements, conferences, corporate events, community gatherings, and high school competitions. An athletic facility costs money. A well-programmed venue can make money. Every ticket and rental introduces someone new to this campus.',
+      out:['Modern athletics home','Event rental income','Corporate sponsorship','A new Austin destination']
+    },
+    {
+      name:'Academic Building + Student Union',
+      range:'$75–100 million',
+      img:'assets/r-student-center.jpg',
+      alt:'Master Plan rendering: a glass-fronted student center with a guitar sculpture at the entry',
+      body:'Students should not have to choose between excellent academics and an excellent campus experience. A modern academic, administrative and student-life facility: classrooms, collaborative learning environments, faculty spaces, technology-rich instruction, dining, gathering spaces for student organizations, leadership development, study areas, and places where students can simply be students.',
+      out:['Teaching and learning','Student engagement','Stronger retention','Recruitment advantage']
+    },
+    {
+      name:'Preserve Bluebonnet Hill',
+      range:'$25–40 million',
+      img:'assets/r-land-today.jpg',
+      alt:'The Huston-Tillotson campus hill in East Austin today',
+      body:'Building the future should never mean forgetting the past. A dedicated capital pool for renovation, deferred maintenance, accessibility, technology, HVAC, roofs, life-safety systems, energy efficiency, landscaping, and historic preservation. The goal is not to make historic buildings look new. It is to make them ready for the next 150 years, including the historic King-Seabrook Chapel and the green spaces we all know as HT.',
+      out:['Historic preservation','Accessibility','Life safety','Energy efficiency']
+    },
+    {
+      name:'Center for Philanthropy & Innovation',
+      range:'$35–50 million',
+      img:'assets/r-admin-dusk.jpg',
+      alt:'Master Plan rendering: a brick and glass building at dusk with people on the sidewalk',
+      body:'What if HT does more than receive historic philanthropy? What if we teach it? A national destination where nonprofit leaders, philanthropists, foundations, students and entrepreneurs learn how transformational giving actually works, connected to an AI and emerging-technology laboratory, innovation studios, an entrepreneurship incubator, executive education classrooms, and a permanent home for HBCU AI Con. Learn how to fund an idea in the morning and build it in the afternoon.',
+      out:['Executive education revenue','National visibility','Corporate partnerships','Home for HBCU AI Con']
+    }
+  ];
+
+  const list = document.getElementById('xpList');
+  const frame = document.getElementById('xpFrame');
+  const body = document.getElementById('xpBody');
+  let active = 0;
+  const buttons = [];
+  const layers = [];
+
+  PROJECTS.forEach((p, i) => {
+    const li = document.createElement('li');
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.setAttribute('role', 'tab');
+    b.setAttribute('aria-selected', String(i === 0));
+    b.tabIndex = i === 0 ? 0 : -1;
+    b.innerHTML =
+      '<span class="idx">' + String(i + 1).padStart(2, '0') + '</span>' +
+      '<span class="nm">' + p.name + '</span>' +
+      '<span class="rg">' + p.range + '</span>';
+    b.addEventListener('click', () => select(i));
+    b.addEventListener('keydown', e => {
+      if (e.key !== 'ArrowDown' && e.key !== 'ArrowUp' && e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+      e.preventDefault();
+      const step = (e.key === 'ArrowDown' || e.key === 'ArrowRight') ? 1 : -1;
+      const next = (i + step + PROJECTS.length) % PROJECTS.length;
+      select(next);
+      buttons[next].focus();
+    });
+    li.appendChild(b);
+    list.appendChild(li);
+    buttons.push(b);
+
+    const img = document.createElement('img');
+    img.src = p.img;
+    img.alt = p.alt;
+    if (i > 0) img.loading = 'lazy';
+    if (i === 0) img.classList.add('on');
+    frame.appendChild(img);
+    layers.push(img);
+  });
+
+  function renderBody(p) {
+    body.innerHTML =
+      '<h3>' + p.name + '</h3>' +
+      '<p>' + p.body + '</p>' +
+      '<div class="out">' + p.out.map(o => '<span>' + o + '</span>').join('') + '</div>';
+    if (!reduced && window.gsap) {
+      gsap.fromTo(body.children,
+        {y: 14, opacity: 0},
+        {y: 0, opacity: 1, duration: 0.5, ease: 'expo.out', stagger: 0.05});
+    }
+  }
+
+  function select(i) {
+    if (i === active) return;
+    layers[active].classList.remove('on');
+    buttons[active].setAttribute('aria-selected', 'false');
+    buttons[active].tabIndex = -1;
+    active = i;
+    layers[active].classList.add('on');
+    buttons[active].setAttribute('aria-selected', 'true');
+    buttons[active].tabIndex = 0;
+    renderBody(PROJECTS[i]);
+  }
+
+  renderBody(PROJECTS[0]);
+
+  /* ---------- Quote carousel ---------- */
+  const slides = [].slice.call(document.querySelectorAll('.carousel .slide'));
+  const countEl = document.getElementById('slideCount');
+  let cur = 0;
+  function show(i) {
+    slides[cur].classList.remove('active');
+    cur = (i + slides.length) % slides.length;
+    slides[cur].classList.add('active');
+    countEl.textContent = (cur + 1) + ' / ' + slides.length;
+  }
+  document.getElementById('prevSlide').addEventListener('click', () => show(cur - 1));
+  document.getElementById('nextSlide').addEventListener('click', () => show(cur + 1));
+
+  /* ---------- Motion ---------- */
+  if (window.gsap && !reduced) {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.timeline({defaults:{ease:'expo.out'}})
+      .from('.hero-copy .eyebrow', {y:24, opacity:0, duration:0.9, delay:0.15})
+      .from('#heroTitle', {y:44, opacity:0, duration:1.15}, '-=0.62')
+      .from('.hero .verse, .hero .verse-ref', {y:22, opacity:0, duration:0.9, stagger:0.07}, '-=0.72')
+      .from('.hero .cta-row', {y:20, opacity:0, duration:0.8}, '-=0.55')
+      .from('.hero-media img', {scale:1.14, duration:1.8, ease:'power2.out'}, 0)
+      .from('.hero .est, .hero .caption', {opacity:0, duration:0.8}, '-=0.8');
+
+    gsap.utils.toArray('.reveal').forEach(el => {
+      gsap.fromTo(el, {y:26, opacity:0}, {
+        y:0, opacity:1, duration:0.95, ease:'expo.out',
+        scrollTrigger:{trigger:el, start:'top 87%'}
+      });
+    });
+
+    // Scale and fade on the Moody portrait
+    gsap.fromTo('#moodyMedia img', {scale:0.88}, {
+      scale:1, ease:'none',
+      scrollTrigger:{trigger:'#moodyMedia', start:'top 95%', end:'top 35%', scrub:true}
+    });
+
+    // Scrubbing word reveal on the Esther passage
+    const quote = document.getElementById('scrubQuote');
+    quote.innerHTML = quote.textContent.trim().split(/\s+/)
+      .map(w => '<span class="w">' + w + '</span>').join(' ');
+    gsap.to('#scrubQuote .w', {
+      opacity:1, stagger:0.06, ease:'none',
+      scrollTrigger:{trigger:'#scripture', start:'top 78%', end:'center 48%', scrub:true}
+    });
+
+    // Proportional scale bar grows into place
+    gsap.utils.toArray('#scaleBar div').forEach((seg, i) => {
+      gsap.to(seg, {
+        width: seg.dataset.w + '%', duration:1.15, ease:'expo.out', delay:i * 0.08,
+        scrollTrigger:{trigger:'#scaleWrap', start:'top 78%'}
+      });
+    });
+
+    // Card stacking, desktop only: below 880px the cards no longer stack,
+    // so dimming them would just wash out the copy with nothing to reveal.
+    ScrollTrigger.matchMedia({
+      '(min-width: 881px)': function () {
+        const cards = gsap.utils.toArray('.p-card');
+        cards.forEach((card, i) => {
+          if (i === cards.length - 1) return;
+          gsap.to(card, {
+            scale:0.94, opacity:0.5, transformOrigin:'center top', ease:'none',
+            scrollTrigger:{trigger:cards[i+1], start:'top bottom', end:'top 6rem', scrub:true}
+          });
+        });
+      }
+    });
+  } else {
+    document.querySelectorAll('.reveal').forEach(el => {
+      el.style.opacity = 1; el.style.transform = 'none';
+    });
+    document.querySelectorAll('#scaleBar div').forEach(seg => seg.style.width = seg.dataset.w + '%');
+  }
+})();
+</script>
+</body>
+</html>

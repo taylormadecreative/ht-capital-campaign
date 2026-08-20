@@ -1,0 +1,5 @@
+# Generated single-file bundle (3.7MB, rebuild with `python3 build/bundle.py`)
+build/artifact.html
+build/opt/
+
+.DS_Store
