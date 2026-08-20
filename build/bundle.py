@@ -42,6 +42,9 @@ def optimize(src: Path) -> Path:
     including WebP sources: sips can read WebP but cannot write it, so the
     resample has to target the .jpg path directly rather than round-tripping.
     """
+    if src.suffix.lower() == ".mp4":
+        return src  # already web-encoded; sips can't touch video anyway
+
     keep_png = src.suffix.lower() == ".png"
     out = (OPTIMIZED / src.name).with_suffix(".png" if keep_png else ".jpg")
 

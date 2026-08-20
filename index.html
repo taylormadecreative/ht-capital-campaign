@@ -155,10 +155,11 @@
   }
   .hero .cta-row{display:flex;gap:1rem;flex-wrap:wrap}
   .hero-media{position:relative;min-height:60svh;overflow:hidden}
-  .hero-media img{
+  .hero-media img,
+  .hero-media video{
     position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
-    /* Framed so the full monument sign reads; the panel is wide enough to hold it. */
-    object-position:46% center;filter:contrast(1.04) saturate(1.02);
+    /* The clip is 16:9 in a portrait panel; center on the arena entrance. */
+    object-position:50% center;filter:contrast(1.04) saturate(1.02);
   }
   .hero-media::after{
     /* No wash over the photograph. Only a short bottom scrim, which the caption
@@ -541,8 +542,12 @@
       </div>
     </div>
     <div class="hero-media">
-      <img src="assets/campus-hero.webp" alt="The Huston-Tillotson University limestone monument sign, reading Huston-Tillotson University, 1875, Austin, Texas, in front of a brick campus building" fetchpriority="high">
-      <p class="caption">The campus today</p>
+      <video id="heroVideo" autoplay muted loop playsinline preload="auto"
+             poster="assets/hero-flyover-poster.jpg"
+             aria-label="Aerial fly-over of the proposed Huston-Tillotson arena: students walking and talking on a sunny campus street as the drone rises to reveal the building">
+        <source src="assets/hero-flyover.mp4" type="video/mp4">
+      </video>
+      <p class="caption">The Master Plan in motion</p>
     </div>
     <p class="est">Est. 1875 &middot; Austin, Texas</p>
   </header>
@@ -823,6 +828,13 @@
 (function () {
   const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  /* Reduced motion: hold the hero on its poster frame instead of looping. */
+  const heroVideo = document.getElementById('heroVideo');
+  if (reduced && heroVideo) {
+    heroVideo.removeAttribute('autoplay');
+    heroVideo.pause();
+  }
+
   /* ---------- Nav ---------- */
   const nav = document.getElementById('nav');
   addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 40), {passive:true});
@@ -963,7 +975,7 @@
       .from('#heroTitle', {y:44, opacity:0, duration:1.15}, '-=0.62')
       .from('.hero .verse, .hero .verse-ref', {y:22, opacity:0, duration:0.9, stagger:0.07}, '-=0.72')
       .from('.hero .cta-row', {y:20, opacity:0, duration:0.8}, '-=0.55')
-      .from('.hero-media img', {scale:1.14, duration:1.8, ease:'power2.out'}, 0)
+      .from('.hero-media video', {opacity:0, duration:1.2, ease:'power2.out'}, 0)
       .from('.hero .est, .hero .caption', {opacity:0, duration:0.8}, '-=0.8');
 
     gsap.utils.toArray('.reveal').forEach(el => {
