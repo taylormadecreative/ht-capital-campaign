@@ -1,2 +1,36 @@
+# The campaign is unannounced and the figures on this page are preliminary,
+# so search engines stay out until HT approves a public launch.
 User-agent: *
 Disallow: /
+
+# Social preview crawlers are allowed, so a link shared in a DM, an email,
+# or a post still renders its card. These bots do not index.
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Facebot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Slackbot
+Allow: /
+
+User-agent: Slackbot-LinkExpanding
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: Discordbot
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+User-agent: redditbot
+Allow: /
