@@ -253,15 +253,17 @@
 
   .rankings{border-top:1px solid var(--taupe);max-width:58rem}
   .rankings li{
-    list-style:none;display:grid;grid-template-columns:5rem 1fr;align-items:baseline;gap:1.8rem;
+    list-style:none;display:grid;grid-template-columns:auto 1fr;align-items:baseline;gap:1.8rem;
     padding:1.5rem 0;border-bottom:1px solid var(--taupe);
   }
   .rankings .rk{
     font-family:var(--serif);font-size:clamp(1.8rem,2.9vw,2.5rem);
     color:var(--maroon);font-weight:600;font-style:italic;
+    white-space:nowrap;min-width:4.6ch;
   }
   .rankings .rd{font-size:clamp(1rem,1.5vw,1.25rem);line-height:1.45}
-  .rankings-note{margin-top:1.5rem;color:var(--sable);font-size:0.95rem;font-style:italic;font-family:var(--serif)}
+  .rankings-note{margin-top:clamp(2.2rem,3.6vw,3.2rem);max-width:22ch;font-family:var(--serif);font-weight:300;font-size:clamp(1.6rem,3vw,2.6rem);line-height:1.16;letter-spacing:-0.012em;color:var(--maroon);text-wrap:balance}
+  .rankings-note em{font-style:italic;font-weight:400;color:var(--brick)}
 
   /* ---------- Litany ---------- */
   .litany{background:var(--eco);color:var(--sand);text-align:center}
@@ -611,12 +613,12 @@
         </div>
       </div>
       <ul class="rankings reveal">
-        <li><span class="rk">No.&thinsp;1</span><span class="rd">Private HBCU in Texas</span></li>
-        <li><span class="rk">No.&thinsp;2</span><span class="rd">HBCU in Texas</span></li>
-        <li><span class="rk">No.&thinsp;1</span><span class="rd">HBCU in return on investment</span></li>
+        <li><span class="rk">No.&#8239;1</span><span class="rd">Private HBCU in Texas</span></li>
+        <li><span class="rk">No.&#8239;2</span><span class="rd">HBCU in Texas</span></li>
+        <li><span class="rk">No.&#8239;1</span><span class="rd">HBCU in return on investment</span></li>
         <li><span class="rk serif">&#43;</span><span class="rd">Nationally recognized for social mobility</span></li>
       </ul>
-      <p class="rankings-note reveal">But rankings aren't the real victory. Students are.</p>
+      <p class="rankings-note reveal">But rankings aren't the real victory. <em>Students are.</em></p>
     </div>
   </section>
 
@@ -749,7 +751,7 @@
           <p class="range">Student Success &amp; Scholarships &middot; $175&ndash;225 million</p>
           <p>Buildings change campuses. Scholarships change families. No academically successful HT student should reach the final two years and have money be the reason they cannot finish.</p>
           <ul>
-            <li>Meet Me Halfway, expanding Ross Moody Finishing the Last Mile <span class="sub-range">$125&ndash;175M</span></li>
+            <li>Meet Me Halfway, expanding the Moody Final Mile Scholarship <span class="sub-range">$125&ndash;175M</span></li>
             <li>Ram Training Camp, the six-week summer bridge <span class="sub-range">$30&ndash;40M</span></li>
             <li>Student Scholarship, Persistence &amp; Opportunity Fund <span class="sub-range">$15&ndash;25M</span></li>
           </ul>
@@ -912,7 +914,7 @@
       range:'$35–50 million',
       img:'assets/r-admin-dusk.jpg',
       alt:'Master Plan rendering: a brick and glass building at dusk with people on the sidewalk',
-      body:'What if HT does more than receive historic philanthropy? What if we teach it? A national destination where nonprofit leaders, philanthropists, foundations, students and entrepreneurs learn how transformational giving actually works, connected to an AI and emerging-technology laboratory, innovation studios, an entrepreneurship incubator, executive education classrooms, and a permanent home for HBCU AI Con. Learn how to fund an idea in the morning and build it in the afternoon.',
+      body:'What if HT does more than receive historic philanthropy? What if we teach it? A national destination where nonprofit leaders, philanthropists, foundations, students, and entrepreneurs learn how transformational giving actually works, connected to an AI and emerging-technology laboratory, innovation studios, an entrepreneurship incubator, executive education classrooms, and a permanent home for HBCU AI Con. Learn how to fund an idea in the morning and build it in the afternoon.',
       out:['Executive education revenue','National visibility','Corporate partnerships','Home for HBCU AI Con']
     }
   ];
