@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<script>document.documentElement.className="js";</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Make a Gift | For Such a Time as This | Huston-Tillotson University</title>
+<meta name="description" content="Give to For Such a Time as This, the capital campaign for Huston-Tillotson University. Give online, pledge, or talk with Institutional Advancement.">
+<!-- Preview build. The campaign is unannounced; keep this out of search results until HT approves. -->
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Huston-Tillotson University">
+<meta property="og:url" content="https://taylormadecreative.github.io/ht-capital-campaign/give/">
+<meta property="og:title" content="Join us in it. Make a gift to For Such a Time as This">
+<meta property="og:description" content="Give online, make a pledge, or talk with Institutional Advancement about the capital campaign for Huston-Tillotson University.">
+<meta property="og:image" content="https://taylormadecreative.github.io/ht-capital-campaign/assets/og-image.jpg">
+<meta property="og:image:secure_url" content="https://taylormadecreative.github.io/ht-capital-campaign/assets/og-image.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="For Such a Time as This, the Capital Campaign for Huston-Tillotson University, over a rendering of the new arena with students on campus">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Join us in it. Make a gift to For Such a Time as This">
+<meta name="twitter:description" content="Give online, make a pledge, or talk with Institutional Advancement about the capital campaign for Huston-Tillotson University.">
+<meta name="twitter:image" content="https://taylormadecreative.github.io/ht-capital-campaign/assets/og-image.jpg">
+<link rel="icon" type="image/png" href="../assets/monogram-gold.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..700;1,8..60,300..700&family=Archivo:ital,wdth,wght@0,62..125,300..900;1,62..125,300..900&display=swap" rel="stylesheet">
+<style>
+  html{overflow-x:clip}
+  :root{
+    --maroon:#660100;
+    --brick:#8F0000;
+    --mahogany:#3B0000;
+    --gold:#FFCC00;
+    --lumen:#F2B00D;
+    --honey:#D68A2B;
+    --terra:#291C14;
+    --sable:#61422E;
+    --taupe:#C09780;
+    --sand:#FFFAEB;
+    --ember:#F7E3B8;
+    --eco:#00373E;
+    --grove:#36968A;
+    --fresh:#C7EDBF;
+
+    --serif:'Source Serif 4', Georgia, 'Times New Roman', serif;
+    --sans:'Archivo', 'Helvetica Neue', Arial, sans-serif;
+
+    --ease-out:cubic-bezier(0.23,1,0.32,1);
+    --ease-in-out:cubic-bezier(0.77,0,0.175,1);
+
+    --pad:clamp(1.5rem,5vw,5.5rem);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:var(--sans);
+    background:var(--terra);
+    color:var(--terra);
+    font-size:1.0625rem;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  ::selection{background:var(--gold);color:var(--terra)}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  :focus-visible{outline:2px solid var(--maroon);outline-offset:3px;border-radius:2px;box-shadow:0 0 0 5px var(--gold)}
+  .hero :focus-visible,.back :focus-visible,footer :focus-visible,nav :focus-visible,.pick:focus-visible{outline-color:var(--gold);box-shadow:0 0 0 5px var(--terra)}
+
+  h1,h2,h3,.serif{font-family:var(--serif)}
+  .eyebrow{
+    font-family:var(--sans);
+    font-stretch:118%;
+    font-weight:600;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    font-size:0.78rem;
+    max-width:none;
+  }
+  p{max-width:65ch}
+  .sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+  /* ---------- Buttons ---------- */
+  .btn{
+    display:inline-block;
+    font-family:var(--sans);
+    font-stretch:112%;
+    font-weight:700;
+    font-size:0.95rem;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    text-decoration:none;
+    padding:1.05rem 2.2rem;
+    border-radius:2px;
+    cursor:pointer;
+    border:none;
+    transition:transform 160ms var(--ease-out), background-color 200ms ease, color 200ms ease, border-color 200ms ease;
+  }
+  .btn:active{transform:scale(0.97)}
+  .btn-gold{background:var(--gold);color:var(--terra)}
+  .btn-ghost{border:1px solid rgba(255,250,235,0.45);color:var(--sand);background:none}
+  .btn-maroon{background:var(--maroon);color:var(--sand)}
+  .btn-outline-dark{border:1px solid var(--terra);color:var(--terra);background:none}
+  .btn[disabled]{cursor:progress;opacity:0.75}
+  @media (hover:hover) and (pointer:fine){
+    .btn-gold:hover{background:var(--lumen)}
+    .btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+    .btn-maroon:hover{background:var(--mahogany)}
+    .btn-outline-dark:hover{background:var(--terra);color:var(--gold)}
+  }
+
+  /* ---------- Nav ---------- */
+  nav{
+    position:fixed;inset:0 0 auto 0;z-index:100;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:1.1rem var(--pad);
+    transition:background-color 300ms ease, box-shadow 300ms ease, padding 300ms ease;
+  }
+  nav.scrolled{
+    background:rgba(41,28,20,0.96);
+    box-shadow:0 1px 0 rgba(255,204,0,0.2);
+    padding-top:0.8rem;padding-bottom:0.8rem;
+  }
+  nav .brand{display:flex;align-items:center;gap:0.9rem;text-decoration:none}
+  nav .brand img{height:34px;width:auto}
+  nav .brand span{
+    color:var(--sand);font-family:var(--sans);font-stretch:115%;font-weight:600;
+    font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;line-height:1.4;
+  }
+  nav .links{display:flex;align-items:center;gap:2rem}
+  nav .links a{
+    color:var(--sand);text-decoration:none;font-size:0.82rem;font-weight:600;
+    font-stretch:110%;letter-spacing:0.12em;text-transform:uppercase;white-space:nowrap;
+    transition:color 200ms ease;
+  }
+  @media (max-width:1180px){
+    nav .links{gap:1.3rem}
+    nav .links a{font-size:0.76rem;letter-spacing:0.1em}
+  }
+  @media (max-width:1000px){nav .links a[href="#designate"]{display:none}}
+  @media (hover:hover) and (pointer:fine){nav .links a:hover{color:var(--gold)}}
+  nav .links .btn{padding:0.7rem 1.4rem;font-size:0.75rem}
+  @media (max-width:820px){
+    nav .links a:not(.btn){display:none}
+    nav .brand span{display:none}
+  }
+
+  /* ---------- Hero: editorial split on mahogany ---------- */
+  .hero{
+    background:var(--mahogany);color:var(--sand);
+    min-height:min(88svh,64rem);
+    display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);
+    gap:clamp(2rem,4vw,4rem);align-items:end;
+    padding:clamp(7.5rem,16vh,10.5rem) var(--pad) clamp(3.5rem,6vw,5rem);
+    position:relative;isolation:isolate;overflow:clip;
+  }
+  .hero::before{
+    /* A quiet field of the campaign gold, low in the corner, so the drench has a
+       source of light instead of reading as a flat slab. */
+    content:"";position:absolute;inset:auto auto -30% -15%;width:60vw;height:60vw;
+    max-width:56rem;max-height:56rem;border-radius:999px;pointer-events:none;z-index:-1;
+    background:radial-gradient(closest-side, rgba(255,204,0,0.13), rgba(255,204,0,0) 72%);
+  }
+  .hero-copy{max-width:60rem}
+  .hero .eyebrow{color:var(--gold);margin-bottom:2.2rem}
+  .hero h1{
+    font-size:clamp(3.2rem,7.4vw,6.9rem);
+    line-height:0.98;font-weight:400;letter-spacing:-0.02em;
+    margin-bottom:2rem;max-width:12ch;
+  }
+  .hero h1 em{font-style:italic;color:var(--gold)}
+  .hero .lede{
+    font-family:var(--serif);font-size:clamp(1.15rem,1.75vw,1.5rem);line-height:1.5;
+    color:var(--ember);max-width:36rem;margin-bottom:2.8rem;
+  }
+  .hero .cta-row{display:flex;gap:1rem;flex-wrap:wrap}
+  .hero-media{position:relative;align-self:stretch;min-height:22rem}
+  .hero-media .frame{
+    position:absolute;inset:0;overflow:hidden;border-radius:4px;
+    box-shadow:0 30px 70px -30px rgba(0,0,0,0.6);
+  }
+  .hero-media img{width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+  .hero-media figcaption{
+    position:absolute;left:1.2rem;bottom:1.1rem;color:var(--ember);
+    font-size:0.7rem;letter-spacing:0.16em;text-transform:uppercase;font-stretch:110%;font-weight:600;
+    text-shadow:0 1px 10px rgba(41,28,20,0.9);
+  }
+  @media (max-width:900px){
+    .hero{grid-template-columns:1fr;align-items:start;min-height:0;padding-top:clamp(6.5rem,14vh,8rem)}
+    .hero-media{min-height:0}
+    .hero-media .frame{position:static;aspect-ratio:4/3}
+    .hero-media figcaption{position:static;margin-top:0.85rem;color:var(--taupe);text-shadow:none}
+    .hero h1{max-width:none}
+  }
+
+  /* ---------- Sections ---------- */
+  section{padding:clamp(6rem,11vw,10rem) var(--pad)}
+  .measure{max-width:74rem;margin:0 auto}
+  .sec-head{margin-bottom:clamp(2.6rem,5vw,4rem)}
+  .sec-head .eyebrow{color:var(--brick);margin-bottom:1.6rem}
+  .sec-head h2{font-size:clamp(2.2rem,4.8vw,4.2rem);line-height:1.08;font-weight:400;letter-spacing:-0.012em;max-width:22ch;margin-bottom:1.4rem}
+  .sec-head p{color:var(--sable);font-size:clamp(1.02rem,1.4vw,1.18rem);max-width:56ch}
+
+  /* ---------- Ways to give: a ruled ledger, not four cards ---------- */
+  .ways{background:var(--sand)}
+  .ledger{list-style:none;border-top:1px solid var(--taupe)}
+  .ledger li{
+    display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:clamp(1.2rem,3vw,3rem);
+    padding:clamp(1.8rem,3vw,2.6rem) 0;border-bottom:1px solid var(--taupe);align-items:start;
+  }
+  .ledger .way{
+    font-family:var(--serif);font-style:italic;font-weight:400;
+    font-size:clamp(1.6rem,2.8vw,2.4rem);line-height:1.1;color:var(--maroon);
+  }
+  .ledger .way small{
+    display:block;font-family:var(--sans);font-style:normal;font-weight:600;font-stretch:112%;
+    font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--sable);margin-top:0.7rem;
+  }
+  .ledger .how p{margin-bottom:1.1rem;max-width:58ch}
+  .ledger .how p:last-child{margin-bottom:0}
+  .ledger address{font-style:normal;font-family:var(--serif);font-size:1.08rem;line-height:1.55;color:var(--terra)}
+  .ledger .how .btn{margin-top:0.4rem}
+  .ledger .how a:not(.btn){color:var(--brick);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+  .ledger .cards{font-size:0.78rem;letter-spacing:0.14em;text-transform:uppercase;font-stretch:110%;font-weight:600;color:var(--sable);margin-top:0.9rem}
+  @media (max-width:760px){
+    .ledger li{grid-template-columns:1fr;gap:0.9rem}
+  }
+
+  /* ---------- Designate ---------- */
+  .designate{background:var(--ember)}
+  .designate .sec-head .eyebrow{color:var(--brick)}
+  .strip{
+    display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0.35rem;
+    border-radius:6px;overflow:hidden;
+  }
+  .pick{
+    appearance:none;border:0;cursor:pointer;text-align:left;font-family:var(--sans);
+    padding:clamp(1.3rem,2.4vw,2rem) clamp(1.1rem,2vw,1.6rem) clamp(1.5rem,2.8vw,2.2rem);
+    min-height:12.5rem;display:flex;flex-direction:column;justify-content:space-between;gap:1.4rem;
+    position:relative;isolation:isolate;
+    transition:transform 220ms var(--ease-out);
+  }
+  .pick::after{
+    /* The selection mark: a gold rule that grows from the left edge. */
+    content:"";position:absolute;left:0;right:0;bottom:0;height:4px;background:var(--gold);
+    transform:scaleX(0);transform-origin:0 50%;transition:transform 320ms var(--ease-out);
+  }
+  .pick[aria-pressed="true"]::after{transform:scaleX(1)}
+  .pick:active{transform:scale(0.985)}
+  .pick .num{font-family:var(--serif);font-style:italic;font-weight:600;font-size:clamp(1.7rem,2.6vw,2.3rem);line-height:1}
+  .pick .body{display:block}
+  .pick .nm{display:block;font-family:var(--serif);font-size:clamp(1.15rem,1.7vw,1.5rem);line-height:1.2;font-weight:400;text-wrap:balance}
+  .pick .rg{display:block;font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;font-stretch:112%;font-weight:700;margin-top:0.6rem;line-height:1.5}
+  .pick .rg .amt{display:block;margin-top:0.15rem;letter-spacing:0.1em}
+  .pick .check{
+    position:absolute;top:1rem;right:1rem;width:1.5rem;height:1.5rem;border-radius:999px;
+    border:1px solid currentColor;display:grid;place-items:center;font-size:0.8rem;
+    opacity:0.55;transition:opacity 200ms ease, background-color 200ms ease, color 200ms ease;
+  }
+  .pick .check svg{width:0.8rem;height:0.8rem;opacity:0;transform:scale(0.6);transition:opacity 200ms ease, transform 260ms var(--ease-out)}
+  .pick[aria-pressed="true"] .check{opacity:1;background:var(--gold);color:var(--terra);border-color:var(--gold)}
+  .pick[aria-pressed="true"] .check svg{opacity:1;transform:scale(1)}
+  .pick.k1{background:var(--mahogany);color:var(--sand)}
+  .pick.k1 .num,.pick.k1 .rg{color:var(--gold)}
+  .pick.k2{background:var(--brick);color:var(--sand)}
+  .pick.k2 .num,.pick.k2 .rg{color:var(--ember)}
+  .pick.k3{background:var(--eco);color:var(--sand)}
+  .pick.k3 .num,.pick.k3 .rg{color:var(--fresh)}
+  .pick.k4{background:var(--terra);color:var(--sand)}
+  .pick.k4 .num,.pick.k4 .rg{color:var(--gold)}
+  @media (hover:hover) and (pointer:fine){
+    .pick:hover .check{opacity:1}
+  }
+  .strip-note{
+    margin-top:1.4rem;font-family:var(--serif);font-style:italic;color:var(--sable);font-size:0.95rem;
+    max-width:58ch;text-wrap:pretty;
+  }
+  .strip-note strong{font-style:normal;font-weight:600;color:var(--maroon)}
+  @media (max-width:820px){.strip{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  @media (max-width:440px){.strip{grid-template-columns:1fr}.pick{min-height:0}}
+
+  .naming{
+    margin-top:clamp(3.5rem,6vw,5rem);display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);
+    gap:clamp(2rem,4vw,4rem);align-items:start;border-top:1px solid var(--taupe);padding-top:clamp(2rem,4vw,3rem);
+  }
+  .naming h3{font-size:clamp(1.5rem,2.6vw,2.2rem);line-height:1.15;font-weight:400;color:var(--maroon)}
+  .naming p{color:var(--terra);margin-bottom:1rem}
+  @media (max-width:820px){.naming{grid-template-columns:1fr}}
+
+  /* ---------- Contact + inquiry ---------- */
+  .contact{background:var(--sand)}
+  .contact-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(2.5rem,6vw,6rem);align-items:start}
+  .card{font-size:1rem;line-height:1.7}
+  .card .who{font-family:var(--serif);font-size:clamp(1.4rem,2.2vw,1.8rem);color:var(--maroon);line-height:1.2;margin-bottom:1.2rem}
+  .card dl{display:grid;grid-template-columns:auto 1fr;gap:0.55rem 1.4rem;align-items:baseline}
+  .card dt{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;font-stretch:112%;font-weight:600;color:var(--sable);padding-top:0.3rem}
+  .card dd{color:var(--terra)}
+  .card dd a{color:var(--brick);text-decoration:none;font-weight:600}
+  .card dd a:hover{text-decoration:underline;text-underline-offset:3px}
+  .card address{font-style:normal}
+  .card .ext{margin-top:1.8rem}
+  .card .ext a{color:var(--brick);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;font-weight:600}
+
+  .form-wrap{position:relative}
+  form.inq{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem 1.6rem;transition:opacity 260ms ease, filter 260ms ease, transform 300ms var(--ease-out)}
+  form.inq.sent{opacity:0;filter:blur(3px);transform:translateY(-6px);pointer-events:none}
+  .field{display:grid;gap:0.5rem}
+  .field.full{grid-column:1 / -1}
+  .field label{font-size:0.76rem;letter-spacing:0.16em;text-transform:uppercase;font-stretch:112%;font-weight:600;color:var(--sable)}
+  .field label .opt{font-weight:400;letter-spacing:0.1em;color:var(--sable);opacity:0.85;margin-left:0.4rem}
+  .field input,.field select,.field textarea{
+    font-family:var(--sans);font-size:1.02rem;color:var(--terra);
+    background:transparent;border:0;border-bottom:1px solid var(--taupe);border-radius:0;
+    padding:0.65rem 0 0.7rem;width:100%;transition:border-color 200ms ease;
+  }
+  .field textarea{min-height:7.5rem;resize:vertical;line-height:1.55}
+  .field select{cursor:pointer;appearance:none;-webkit-appearance:none;padding-right:2rem;
+    background:linear-gradient(45deg, transparent 50%, var(--sable) 50%) calc(100% - 12px) 60% / 6px 6px no-repeat,
+               linear-gradient(135deg, var(--sable) 50%, transparent 50%) calc(100% - 6px) 60% / 6px 6px no-repeat;
+  }
+  .field input:focus-visible,.field select:focus-visible,.field textarea:focus-visible{outline:none;border-bottom-color:var(--maroon);box-shadow:0 1px 0 0 var(--maroon)}
+  .field input::placeholder,.field textarea::placeholder{color:rgba(97,66,46,0.78)}
+  .field .help{font-size:0.82rem;color:var(--sable)}
+  .field .err{font-size:0.82rem;color:var(--brick);font-weight:600;display:none}
+  .field.invalid .err{display:block}
+  .field.invalid input,.field.invalid select,.field.invalid textarea{border-bottom-color:var(--brick)}
+  .inq .submit-row{grid-column:1 / -1;display:flex;align-items:center;gap:1.4rem;flex-wrap:wrap;margin-top:0.4rem}
+  .inq .fine{font-size:0.82rem;color:var(--sable);max-width:32ch}
+  .honey{position:absolute;left:-9999px;opacity:0;pointer-events:none}
+  .status{margin-top:1.2rem;font-size:0.95rem;color:var(--brick);font-weight:600;min-height:1.4em}
+  .thanks{
+    position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;
+    opacity:0;transform:translateY(8px);transition:opacity 360ms var(--ease-out), transform 420ms var(--ease-out);
+  }
+  .thanks[hidden]{display:none}
+  .thanks.on{opacity:1;transform:none}
+  .thanks h3{font-size:clamp(1.8rem,3.2vw,2.8rem);line-height:1.1;font-weight:400;color:var(--maroon);margin-bottom:1rem}
+  .thanks h3 em{font-style:italic;color:var(--brick)}
+  .thanks p{color:var(--sable)}
+  @media (max-width:880px){
+    .contact-grid{grid-template-columns:1fr}
+    form.inq{grid-template-columns:1fr}
+    .field.full{grid-column:auto}
+  }
+
+  /* ---------- Back to campaign ---------- */
+  .back{background:var(--maroon);color:var(--sand);text-align:center;padding-top:clamp(5rem,9vw,7rem);padding-bottom:clamp(5rem,9vw,7rem)}
+  .back h2{font-size:clamp(2rem,4.6vw,3.8rem);line-height:1.08;font-weight:400;letter-spacing:-0.012em;margin:0 auto 1.6rem;max-width:22ch}
+  .back h2 em{font-style:italic;color:var(--gold)}
+  .back p{margin:0 auto 2.4rem;color:var(--ember);font-family:var(--serif);font-size:clamp(1.05rem,1.6vw,1.3rem)}
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--terra);color:var(--taupe);padding:clamp(4rem,7vw,6rem) var(--pad) 3rem}
+  footer .f-grid{max-width:76rem;margin:0 auto;display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:3rem;align-items:end}
+  footer img{width:min(25rem,70vw);height:auto;margin-bottom:2rem}
+  footer .tagline{font-family:var(--serif);font-style:italic;color:var(--ember);font-size:1.12rem}
+  footer .f-right{text-align:right;font-size:0.9rem;line-height:1.9}
+  footer .f-right a{color:var(--gold);text-decoration:none}
+  footer .f-right a:hover{text-decoration:underline}
+  footer .credit{
+    max-width:76rem;margin:3.5rem auto 0;padding-top:1.6rem;
+    border-top:1px solid rgba(192,151,128,0.22);font-size:0.78rem;color:var(--taupe);
+    display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap;
+  }
+  @media (max-width:800px){
+    footer .f-grid{grid-template-columns:1fr}
+    footer .f-right{text-align:left}
+  }
+
+  .js .reveal{opacity:0;transform:translateY(26px)}
+  section,footer{scroll-margin-top:5rem}
+
+  @media (prefers-reduced-motion: reduce){
+    .reveal{opacity:1 !important;transform:none !important}
+    .pick::after,.pick .check,.pick .check svg,form.inq,.thanks{transition:none}
+    html{scroll-behavior:auto}
+  }
+</style>
+</head>
+<body>
+
+<nav id="nav" aria-label="Primary">
+  <a class="brand" href="../" aria-label="Huston-Tillotson University, back to the campaign">
+    <img src="../assets/monogram-gold.png" alt="">
+    <span>Huston-Tillotson<br>University</span>
+  </a>
+  <div class="links">
+    <a href="../">The Campaign</a>
+    <a href="#ways">Ways to Give</a>
+    <a href="#designate">Designate</a>
+    <a href="#contact">Contact</a>
+    <a class="btn btn-gold" href="https://host.nxt.blackbaud.com/donor-form/?svcid=renxt&amp;formId=b0060c70-a5f5-4595-9778-abd234a704a9&amp;envid=p-VS7GSLjfw0CKzC3Xu1K0_Q&amp;zone=usa" target="_blank" rel="noopener">Give Online</a>
+  </div>
+</nav>
+
+<main id="top">
+
+  <header class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Make a gift &middot; For Such a Time as This</p>
+      <h1>Join us <em>in it.</em></h1>
+      <p class="lede">The Moody Foundation looked at our students, our leadership, our land, and our plans, and said, &ldquo;We&rsquo;re in.&rdquo; This is the page where you say it too.</p>
+      <div class="cta-row">
+        <a class="btn btn-gold" href="https://host.nxt.blackbaud.com/donor-form/?svcid=renxt&amp;formId=b0060c70-a5f5-4595-9778-abd234a704a9&amp;envid=p-VS7GSLjfw0CKzC3Xu1K0_Q&amp;zone=usa" target="_blank" rel="noopener">Give Online</a>
+        <a class="btn btn-ghost" href="#contact">Start a Conversation</a>
+      </div>
+    </div>
+    <figure class="hero-media">
+      <div class="frame">
+        <img src="../assets/r-arena-entry-1372.webp" srcset="../assets/r-arena-entry-800.webp 800w, ../assets/r-arena-entry-1372.webp 1372w" sizes="(max-width:900px) 100vw, 40vw" width="1372" height="888" alt="Rendering of the entrance to the proposed HT Arena at dusk, with people gathering under its lit canopy" fetchpriority="high">
+      </div>
+      <figcaption>The HT Arena &middot; Master Plan rendering</figcaption>
+    </figure>
+  </header>
+
+  <!-- WAYS TO GIVE -->
+  <section class="ways" id="ways">
+    <div class="measure">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Ways to give</p>
+        <h2>Every gift has a place on this hill.</h2>
+        <p>Give online in a minute, or sit down with us about a pledge, a naming opportunity, or a planned gift. Four ways, one campaign.</p>
+      </div>
+      <ol class="ledger">
+        <li class="reveal">
+          <p class="way">Online.<small>Secure, in a minute</small></p>
+          <div class="how">
+            <p>Give by card through the University's secure online giving form. It opens in a new window on Blackbaud, the platform HT uses for online gifts. To direct an online gift to a campaign priority, tell us which one in the note below.</p>
+            <a class="btn btn-maroon" href="https://host.nxt.blackbaud.com/donor-form/?svcid=renxt&amp;formId=b0060c70-a5f5-4595-9778-abd234a704a9&amp;envid=p-VS7GSLjfw0CKzC3Xu1K0_Q&amp;zone=usa" target="_blank" rel="noopener">Give Online</a>
+          </div>
+        </li>
+        <li class="reveal">
+          <p class="way">By phone.<small>Monday to Friday, 9 to 5 Central</small></p>
+          <div class="how">
+            <p>Call Institutional Advancement at <a href="tel:+15125053110">(512) 505-3110</a> to give by card over the phone, or to ask a question before you give.</p>
+            <p class="cards">MasterCard &middot; Visa &middot; Discover &middot; American Express</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <p class="way">A pledge or major gift.<small>Arranged with Advancement</small></p>
+          <div class="how">
+            <p>Multi-year pledges, naming opportunities, endowed scholarships, and planned gifts are arranged directly with our Office of Institutional Advancement. Start with the note below and we will take it from there.</p>
+            <a class="btn btn-outline-dark" href="#contact">Start the Conversation</a>
+          </div>
+        </li>
+        <li class="reveal">
+          <p class="way">By check.<small>Payable to Huston-Tillotson University</small></p>
+          <div class="how">
+            <address>Huston-Tillotson University<br>ATTN: Institutional Advancement<br>900 Chicon Street<br>Austin, Texas 78702-2795</address>
+            <p class="cards">Note the campaign priority on the memo line</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- DESIGNATE -->
+  <section class="designate" id="designate">
+    <div class="measure">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Designate your gift</p>
+        <h2>Choose where it goes.</h2>
+        <p>The campaign's four priorities, in the University's own words. Pick one and we will carry it into your note to Advancement below.</p>
+      </div>
+      <div class="strip reveal" role="group" aria-label="Campaign priorities">
+        <button type="button" class="pick k1" data-value="I. Building the Future (Campus &amp; Master Plan)" aria-pressed="false">
+          <span class="check" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>
+          <span class="num">I.</span>
+          <span class="body"><span class="nm">Building the Future</span><span class="rg">Campus &amp; Master Plan<span class="amt">$300&ndash;400M</span></span></span>
+        </button>
+        <button type="button" class="pick k2" data-value="II. Finishing What We Start (Student Success &amp; Scholarships)" aria-pressed="false">
+          <span class="check" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>
+          <span class="num">II.</span>
+          <span class="body"><span class="nm">Finishing What We Start</span><span class="rg">Student Success &amp; Scholarships<span class="amt">$175&ndash;225M</span></span></span>
+        </button>
+        <button type="button" class="pick k3" data-value="III. Creating What Comes Next (Academic Innovation)" aria-pressed="false">
+          <span class="check" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>
+          <span class="num">III.</span>
+          <span class="body"><span class="nm">Creating What Comes Next</span><span class="rg">Academic Innovation<span class="amt">$75&ndash;100M</span></span></span>
+        </button>
+        <button type="button" class="pick k4" data-value="IV. Forever HT (Endowment &amp; Institutional Strength)" aria-pressed="false">
+          <span class="check" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>
+          <span class="num">IV.</span>
+          <span class="body"><span class="nm">Forever HT</span><span class="rg">Endowment &amp; Institutional Strength<span class="amt">$100&ndash;150M</span></span></span>
+        </button>
+      </div>
+      <p class="strip-note reveal" id="stripNote" aria-live="polite">Preliminary ranges. Choosing here only shapes your note.</p>
+
+      <div class="naming reveal">
+        <h3>Legacy naming opportunities.</h3>
+        <div>
+          <p>Naming prospects within the HT Arena include the arena itself, the court, premium suites, club spaces, locker rooms, the training center, the performance stage, concourses, scoreboards, and hospitality spaces.</p>
+          <p>Each is arranged personally with Institutional Advancement, and the conversation starts below.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="measure">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Talk with us</p>
+        <h2>Start the conversation.</h2>
+        <p>A pledge, a naming conversation, a planned gift, or a question before you give. Send a note or call, and we will follow up with you directly.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="card reveal">
+          <p class="who">Office of Institutional Advancement</p>
+          <dl>
+            <dt>Phone</dt><dd><a href="tel:+15125053110">(512) 505-3110</a></dd>
+            <dt>Hours</dt><dd>Monday to Friday, 9:00 a.m. to 5:00 p.m. Central</dd>
+            <dt>Mail</dt><dd><address>Huston-Tillotson University<br>ATTN: Institutional Advancement<br>900 Chicon Street<br>Austin, Texas 78702-2795</address></dd>
+          </dl>
+          <p class="ext"><a href="https://htu.edu/institutional-advancement/" target="_blank" rel="noopener">More about giving at htu.edu</a></p>
+        </div>
+
+        <div class="form-wrap reveal">
+          <form class="inq" id="inq" novalidate>
+            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+            <input type="hidden" name="subject" id="subjectField" value="Capital campaign inquiry">
+            <input type="hidden" name="from_name" value="For Such a Time as This">
+            <div class="honey" aria-hidden="true"><input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off"></div>
+
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required placeholder="Your name" aria-describedby="name-err">
+              <span class="err" id="name-err">Please tell us your name.</span>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" aria-describedby="email-err">
+              <span class="err" id="email-err">Please enter a valid email address.</span>
+            </div>
+            <div class="field">
+              <label for="phone">Phone <span class="opt">optional</span></label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="(512) 000-0000">
+            </div>
+            <div class="field">
+              <label for="interest">I'd like to talk about</label>
+              <select id="interest" name="interest">
+                <option value="Where it's needed most">Where it's needed most</option>
+                <option value="I. Building the Future (Campus &amp; Master Plan)">I. Building the Future</option>
+                <option value="II. Finishing What We Start (Student Success &amp; Scholarships)">II. Finishing What We Start</option>
+                <option value="III. Creating What Comes Next (Academic Innovation)">III. Creating What Comes Next</option>
+                <option value="IV. Forever HT (Endowment &amp; Institutional Strength)">IV. Forever HT</option>
+                <option value="A naming opportunity">A naming opportunity</option>
+                <option value="A planned gift">A planned gift</option>
+                <option value="A question before I give">A question before I give</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="message">Your note</label>
+              <textarea id="message" name="message" required placeholder="Tell us what you have in mind." aria-describedby="message-help message-err"></textarea>
+              <span class="help" id="message-help">A sentence or two is plenty. We will take it from there.</span>
+              <span class="err" id="message-err">Please add a short note.</span>
+            </div>
+            <div class="submit-row">
+              <button class="btn btn-maroon" type="submit" id="sendBtn">Send to Advancement</button>
+              <p class="fine">Your note goes straight to Institutional Advancement.</p>
+            </div>
+          </form>
+          <p class="status" id="status" role="status" aria-live="polite"></p>
+          <div class="thanks" id="thanks" tabindex="-1" hidden>
+            <h3>Thank you. <em>We'll be in touch.</em></h3>
+            <p>Your note is with Institutional Advancement. If it's easier to talk, the office is at <a href="tel:+15125053110" style="color:var(--brick);font-weight:600;text-decoration:none">(512) 505-3110</a>, Monday to Friday, 9 to 5 Central.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="back">
+    <h2 class="reveal">Read the case <em>for such a time as this.</em></h2>
+    <p class="reveal">Why HT, why this land, why now, and the Master Plan that turns the vision into a campus.</p>
+    <a class="btn btn-gold reveal" href="../">Back to the Campaign</a>
+  </section>
+
+</main>
+
+<footer>
+  <div class="f-grid">
+    <div>
+      <img src="../assets/wordmark-gold.png" alt="Huston-Tillotson University">
+      <p class="tagline">Where every soul finds its strength.</p>
+    </div>
+    <div class="f-right">
+      900 Chicon Street, Austin, Texas 78702<br>
+      <a href="https://htu.edu" target="_blank" rel="noopener">HTU.EDU</a><br>
+      <a href="https://htu.edu/institutional-advancement/" target="_blank" rel="noopener">Institutional Advancement</a>
+    </div>
+  </div>
+  <div class="credit">
+    <span>For Such a Time as This &middot; The Capital Campaign for Huston-Tillotson University</span>
+    <span>Master Plan renderings by McElroy Architecture and Smallwood</span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+(function () {
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------- Nav ---------- */
+  const nav = document.getElementById('nav');
+  const onScroll = () => nav.classList.toggle('scrolled', scrollY > 40);
+  addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  /* ---------- Reveals: same grammar as the campaign page ---------- */
+  const reveals = document.querySelectorAll('.reveal');
+  const showAll = () => reveals.forEach(el => { el.style.opacity = 1; el.style.transform = 'none'; });
+  /* Deep links (give/#contact from the campaign page) must land on the section,
+     not on the hero: re-apply the fragment once layout and ScrollTrigger settle. */
+  const landOnHash = () => {
+    if (!location.hash) return;
+    const target = document.querySelector(location.hash);
+    if (!target) return;
+    const prev = document.documentElement.style.scrollBehavior;
+    document.documentElement.style.scrollBehavior = 'auto';
+    target.scrollIntoView({block:'start'});
+    document.documentElement.style.scrollBehavior = prev;
+  };
+  try {
+    if (reduced || !window.gsap || !window.ScrollTrigger) {
+      showAll();
+    } else {
+      gsap.registerPlugin(ScrollTrigger);
+      reveals.forEach((el) => {
+        gsap.to(el, {
+          opacity:1, y:0, duration:1.05, ease:'expo.out',
+          scrollTrigger:{trigger:el, start:'top 88%', once:true}
+        });
+      });
+      setTimeout(() => { ScrollTrigger.refresh(); landOnHash(); }, 900);
+      /* If a trigger never fires (fonts late, layout shift), never leave copy hidden. */
+      setTimeout(() => {
+        reveals.forEach(el => { if (getComputedStyle(el).opacity === '0') { el.style.opacity = 1; el.style.transform = 'none'; } });
+      }, 2500);
+    }
+  } catch (err) { showAll(); }
+  addEventListener('load', landOnHash);
+
+  /* ---------- Designate strip -> select ---------- */
+  const picks = Array.from(document.querySelectorAll('.pick'));
+  const interest = document.getElementById('interest');
+  const note = document.getElementById('stripNote');
+  const decode = s => { const t = document.createElement('textarea'); t.innerHTML = s; return t.value; };
+  function setPick(value) {
+    picks.forEach(b => b.setAttribute('aria-pressed', String(decode(b.dataset.value) === value)));
+    const chosen = picks.find(b => decode(b.dataset.value) === value);
+    if (chosen) {
+      const name = chosen.querySelector('.nm').textContent;
+      const num = chosen.querySelector('.num').textContent;
+      note.innerHTML = 'Preliminary ranges. Your note will mention <strong>' + num + ' ' + name + '</strong>. Change it below any time.';
+    } else {
+      note.textContent = 'Preliminary ranges. Nothing is chosen yet, and choosing here only shapes your note.';
+    }
+  }
+  picks.forEach(b => b.addEventListener('click', () => {
+    const v = decode(b.dataset.value);
+    const already = b.getAttribute('aria-pressed') === 'true';
+    interest.value = already ? "Where it's needed most" : v;
+    setPick(already ? null : v);
+  }));
+  interest.addEventListener('change', () => setPick(interest.value));
+
+  /* ---------- Inquiry form ---------- */
+  const form = document.getElementById('inq');
+  const status = document.getElementById('status');
+  const thanks = document.getElementById('thanks');
+  const sendBtn = document.getElementById('sendBtn');
+  const subject = document.getElementById('subjectField');
+  const PHONE = 'Call (512) 505-3110, Monday to Friday, 9 to 5 Central, and we will help directly.';
+
+  const fields = {
+    name: { el: form.name, ok: v => v.trim().length > 1 },
+    email: { el: form.email, ok: v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()) },
+    message: { el: form.message, ok: v => v.trim().length > 3 }
+  };
+  function validate(showAll) {
+    let first = null;
+    Object.values(fields).forEach(f => {
+      const wrap = f.el.closest('.field');
+      const good = f.ok(f.el.value);
+      if (!good && (showAll || wrap.dataset.touched)) { wrap.classList.add('invalid'); f.el.setAttribute('aria-invalid', 'true'); if (!first) first = f.el; }
+      else { wrap.classList.remove('invalid'); f.el.removeAttribute('aria-invalid'); }
+    });
+    return first;
+  }
+  Object.values(fields).forEach(f => {
+    f.el.addEventListener('blur', () => { f.el.closest('.field').dataset.touched = '1'; validate(false); });
+    f.el.addEventListener('input', () => { if (f.el.closest('.field').dataset.touched) validate(false); });
+  });
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    status.textContent = '';
+    const bad = validate(true);
+    if (bad) { bad.focus(); return; }
+
+    const key = form.access_key.value;
+    if (!key || key === 'YOUR_WEB3FORMS_ACCESS_KEY') {
+      status.textContent = 'This form is not connected yet. ' + PHONE;
+      return;
+    }
+    subject.value = 'Capital campaign inquiry from ' + form.name.value.trim() + ' (' + form.interest.value + ')';
+
+    const data = Object.fromEntries(new FormData(form).entries());
+    if (data.botcheck) return;              // honeypot tripped: drop silently
+    delete data.botcheck;
+    data.replyto = data.email;
+
+    sendBtn.disabled = true; sendBtn.setAttribute('aria-busy', 'true');
+    const label = sendBtn.textContent; sendBtn.textContent = 'Sending';
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method:'POST',
+        headers:{'Content-Type':'application/json', 'Accept':'application/json'},
+        body: JSON.stringify(data)
+      });
+      const out = await res.json().catch(() => ({}));
+      if (res.ok && out.success !== false) {
+        const wrap = form.parentElement;
+        wrap.style.minHeight = wrap.offsetHeight + 'px';   // keep the column's height while the form leaves
+        form.classList.add('sent');
+        setTimeout(() => {
+          form.inert = true; form.setAttribute('aria-hidden', 'true');
+          thanks.hidden = false;
+          requestAnimationFrame(() => requestAnimationFrame(() => { thanks.classList.add('on'); thanks.focus({preventScroll:true}); }));
+        }, reduced ? 0 : 260);
+        return;                                             // leave the button disabled: nothing left to send
+      } else {
+        status.textContent = 'Your note did not go through. ' + PHONE;
+      }
+    } catch (err) {
+      status.textContent = 'Your note did not go through. ' + PHONE;
+    } finally {
+      sendBtn.removeAttribute('aria-busy'); sendBtn.textContent = label;
+      if (!form.classList.contains('sent')) sendBtn.disabled = false;
+    }
+  });
+})();
+</script>
+</body>
+</html>
