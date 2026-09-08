@@ -252,6 +252,11 @@
   }
   @media (max-width:840px){.why-cols{grid-template-columns:1fr}}
 
+  .rankings-h{
+    font-family:var(--serif);font-weight:400;font-size:clamp(1.35rem,2vw,1.75rem);line-height:1.2;
+    color:var(--maroon);margin:0 0 1.1rem;
+  }
+  .sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
   .rankings{border-top:1px solid var(--taupe);max-width:58rem}
   .rankings li{
     list-style:none;display:grid;grid-template-columns:auto 1fr;align-items:baseline;gap:1.8rem;
@@ -260,8 +265,9 @@
   .rankings .rk{
     font-family:var(--serif);font-size:clamp(1.8rem,2.9vw,2.5rem);
     color:var(--maroon);font-weight:600;font-style:italic;
-    white-space:nowrap;min-width:4.6ch;
+    white-space:nowrap;min-width:4.6ch;position:relative;
   }
+  .rankings .rk-plus{color:var(--brick);font-weight:400}
   .rankings .rd{font-size:clamp(1rem,1.5vw,1.25rem);line-height:1.45}
   .rankings-note{margin-top:clamp(2.2rem,3.6vw,3.2rem);max-width:22ch;font-family:var(--serif);font-weight:300;font-size:clamp(1.6rem,3vw,2.6rem);line-height:1.16;letter-spacing:-0.012em;color:var(--maroon);text-wrap:balance}
   .rankings-note em{font-style:italic;font-weight:400;color:var(--brick)}
@@ -620,11 +626,12 @@
           <p>Austin isn't simply our address. Austin is our classroom. Students are surrounded by the companies, entrepreneurs, healthcare systems, and industries shaping the future, right outside the front gate.</p>
         </div>
       </div>
-      <ul class="rankings reveal">
-        <li><span class="rk">No.&#8239;1</span><span class="rd">Private HBCU in Texas</span></li>
-        <li><span class="rk">No.&#8239;2</span><span class="rd">HBCU in Texas</span></li>
-        <li><span class="rk">No.&#8239;1</span><span class="rd">HBCU in return on investment</span></li>
-        <li><span class="rk serif">&#43;</span><span class="rd">Nationally recognized for social mobility</span></li>
+      <h3 class="rankings-h reveal" id="rankings-h">Where HT ranks.</h3>
+      <ul class="rankings reveal" aria-labelledby="rankings-h">
+        <li><span class="rk"><span class="sr">Ranked </span>No.&#8239;1</span><span class="rd">Private HBCU in Texas</span></li>
+        <li><span class="rk"><span class="sr">Ranked </span>No.&#8239;2</span><span class="rd">HBCU in Texas</span></li>
+        <li><span class="rk"><span class="sr">Ranked </span>No.&#8239;1</span><span class="rd">HBCU in return on investment</span></li>
+        <li><span class="rk rk-plus">Plus</span><span class="rd">Nationally recognized for social mobility</span></li>
       </ul>
       <p class="rankings-note reveal">But rankings aren't the real victory. <em>Students are.</em></p>
     </div>
