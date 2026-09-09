@@ -702,7 +702,7 @@
         </div>
         <div class="xp-stage">
           <div class="xp-frame" id="xpFrame"></div>
-          <p class="xp-credit">Rendering &middot; McElroy Architecture and Smallwood</p>
+          <p class="xp-credit" id="xpCredit">Rendering &middot; McElroy Architecture and Smallwood</p>
           <div class="xp-body" id="xpBody" aria-live="polite"></div>
         </div>
       </div>
@@ -712,7 +712,7 @@
   <!-- Scripture scrub -->
   <section class="scripture" id="scripture">
     <blockquote class="quote">More than 2,000 years ago, a young woman named Esther found herself unexpectedly positioned to influence the future of her people. She had access. She had opportunity. She had a decision to make.</blockquote>
-    <span class="ref">That question belongs to Huston-Tillotson now</span>
+    <span class="ref">That decision belongs to Huston-Tillotson now</span>
     <p class="belongs">Why this university? Why this city? Why this land? Why this momentum? Why these students? Why now? Perhaps after 150 years of preparation, perseverance, prayer, and possibility, Huston-Tillotson has arrived at this moment for such a time as this. And you have, too.</p>
   </section>
 
@@ -897,7 +897,7 @@
       range:'$100–140 million',
       img:'assets/r-retail-street.jpg',
       alt:'Rendering of a pedestrian retail street at dusk beneath student housing',
-      body:'HT has reached a simple but consequential constraint: we need more beds. Today there are 440 beds on campus across Beard-Burrows and Allen-Fraiser, plus 155 rented from St. Edward’s. The vision goes further than another residence hall: roughly 800 modern beds above an active street-level retail environment of restaurants, coffee shops, banking, salons, and professional services. Students would not simply live there. They would live in a community.',
+      body:'HT has reached a simple but consequential constraint: we need more beds. Today there are 440 beds on campus across Beard-Burrowes and Allen-Frazier, plus 155 rented from St. Edward’s. The vision goes further than another residence hall: roughly 800 modern beds above an active street-level retail environment of restaurants, coffee shops, banking, salons, and professional services. Students would not simply live there. They would live in a community.',
       out:['Enrollment capacity','Recurring housing revenue','Commercial lease revenue','Connection to East Austin']
     },
     {
@@ -920,6 +920,7 @@
       name:'Preserve Bluebonnet Hill',
       range:'$25–40 million',
       img:'assets/r-land-today.jpg',
+      credit:'Existing conditions · Huston-Tillotson campus',
       alt:'The Huston-Tillotson campus hill in East Austin today',
       body:'Building the future should never mean forgetting the past. A dedicated capital pool for renovation, deferred maintenance, accessibility, technology, HVAC, roofs, life-safety systems, energy efficiency, landscaping, and historic preservation. The goal is not to make historic buildings look new. It is to make them ready for the next 150 years, including the historic King-Seabrook Chapel and the green spaces we all know as HT.',
       out:['Historic preservation','Accessibility','Life safety','Energy efficiency']
@@ -996,9 +997,19 @@
     buttons[active].setAttribute('aria-selected', 'true');
     buttons[active].tabIndex = 0;
     renderBody(PROJECTS[i]);
+    setCredit(PROJECTS[i]);
+  }
+
+  /* One slide is a photograph of the hill as it stands today, not a rendering,
+     so the credit line follows the project rather than sitting static. */
+  const creditEl = document.getElementById('xpCredit');
+  const DEFAULT_CREDIT = 'Rendering \u00b7 McElroy Architecture and Smallwood';
+  function setCredit(p) {
+    if (creditEl) creditEl.textContent = p.credit || DEFAULT_CREDIT;
   }
 
   renderBody(PROJECTS[0]);
+  setCredit(PROJECTS[0]);
 
   /* ---------- Quote carousel ---------- */
   const slides = [].slice.call(document.querySelectorAll('.carousel .slide'));
