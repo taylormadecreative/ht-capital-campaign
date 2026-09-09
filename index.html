@@ -1072,13 +1072,8 @@
         let eqTimer;
         const onResize = () => { clearTimeout(eqTimer); eqTimer = setTimeout(() => { equalize(); ScrollTrigger.refresh(); }, 120); };
         window.addEventListener('resize', onResize);
-        cards.forEach((card, i) => {
-          if (i === cards.length - 1) return;
-          gsap.to(card, {
-            scale:0.95, transformOrigin:'center top', ease:'none',
-            scrollTrigger:{trigger:cards[i+1], start:'top bottom', end:'top 6rem', scrub:true}
-          });
-        });
+        /* No scale recession: every card stays the same width and height, so the
+           covered ones peek as identical strips instead of looking mis-sized. */
         return () => {
           window.removeEventListener('resize', onResize);
           cards.forEach(c => { c.style.minHeight = ''; });
