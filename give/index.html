@@ -206,7 +206,6 @@
   @media (hover:hover) and (pointer:fine){.ada__play:hover{transform:scale(1.05)}}
   .ada__frame.playing .ada__play{opacity:0;pointer-events:none}
   .ada__play[hidden]{display:none}
-  .ada__cap{position:absolute;left:1rem;right:1rem;bottom:1rem;color:var(--sand);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;font-stretch:110%;font-weight:600;text-shadow:0 1px 10px rgba(41,28,20,.9)}
   .ada__copy .eyebrow{color:var(--brick);margin-bottom:1.6rem}
   .ada__copy h2{font-size:clamp(2.1rem,4.4vw,3.8rem);line-height:1.08;font-weight:400;letter-spacing:-.012em;max-width:16ch;margin-bottom:1.3rem}
   .ada__copy p{color:var(--sable);font-size:clamp(1.02rem,1.4vw,1.18rem);max-width:48ch}
@@ -462,7 +461,6 @@
         <button class="ada__play" id="adaPlay" type="button" aria-label="Play Ada&rsquo;s message">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
         </button>
-        <figcaption class="ada__cap" id="adaCap">Ada &middot; HT&rsquo;s student ambassador</figcaption>
       </figure>
       <div class="ada__copy">
         <p class="eyebrow reveal">A word from the hill</p>
@@ -723,7 +721,6 @@
   const adaFrame = document.querySelector('.ada__frame');
   const ada = document.getElementById('adaVideo');
   const adaPlay = document.getElementById('adaPlay');
-  const adaCap = document.getElementById('adaCap');
   if (ada) {
     const useIdle = () => {
       /* No spoken message yet: hold on the silent idle loop so the frame is never a broken player. */
@@ -732,7 +729,6 @@
       ada.muted = true; ada.loop = true; ada.autoplay = !reduced; ada.controls = false;
       if (!reduced) ada.play().catch(() => {});
       adaPlay.hidden = true;
-      adaCap.textContent = "Ada \u00b7 HT\u2019s student ambassador \u00b7 her message is on its way";
     };
     /* The 404 can fire before this script runs, so ask the server directly. */
     fetch('../assets/ada-give.mp4', {method:'HEAD'}).then(r => { if (!r.ok) useIdle(); }).catch(useIdle);
