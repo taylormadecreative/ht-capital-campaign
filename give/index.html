@@ -197,8 +197,8 @@
 
   /* ---------- Ada ---------- */
   .ada{background:var(--sand);padding-top:clamp(4.5rem,8vw,7rem);padding-bottom:clamp(4.5rem,8vw,7rem)}
-  .ada__grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(2.5rem,6vw,6rem);align-items:center}
-  .ada__frame{position:relative;margin:0;aspect-ratio:4/5;max-width:26rem;width:100%;border-radius:6px;overflow:hidden;background:var(--terra);box-shadow:0 30px 70px -30px rgba(41,28,20,.55);justify-self:center}
+  .ada__grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(2.5rem,6vw,6rem);align-items:center}
+  .ada__frame{position:relative;margin:0;aspect-ratio:16/9;max-width:none;width:100%;border-radius:6px;overflow:hidden;background:var(--terra);box-shadow:0 30px 70px -30px rgba(41,28,20,.55);justify-self:center}
   .ada__video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
   .ada__play{position:absolute;left:50%;top:50%;width:5.2rem;height:5.2rem;margin:-2.6rem 0 0 -2.6rem;border-radius:999px;border:0;cursor:pointer;background:var(--gold);color:var(--terra);display:grid;place-items:center;transition:transform 160ms var(--ease-out),opacity 200ms ease}
   .ada__play svg{width:2.2rem;height:2.2rem;margin-left:.25rem}
@@ -216,7 +216,7 @@
   .ada__transcript summary::before{content:"";width:.55rem;height:.55rem;border-right:2px solid var(--brick);border-bottom:2px solid var(--brick);transform:rotate(-45deg);transition:transform 200ms var(--ease-out)}
   .ada__transcript[open] summary::before{transform:rotate(45deg)}
   .ada__transcript p{margin-top:1rem;font-family:var(--serif);font-size:1.05rem;line-height:1.7;color:var(--terra)}
-  @media (max-width:820px){.ada__grid{grid-template-columns:1fr}.ada__frame{max-width:20rem}}
+  @media (max-width:820px){.ada__grid{grid-template-columns:1fr}}
 
   /* ---------- The word: photo and the Case quote, hard edge, no wash ---------- */
   .word{background:var(--maroon);color:var(--sand);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);padding:0;min-height:30rem}
@@ -467,7 +467,7 @@
       <div class="ada__copy">
         <p class="eyebrow reveal">A word from the hill</p>
         <h2 class="reveal">Let Ada walk you through it.</h2>
-        <p class="reveal">Ada is Huston-Tillotson&rsquo;s student ambassador. Press play and she will tell you what this campaign builds and how to be part of it, in about a minute.</p>
+        <p class="reveal">Ada is Huston-Tillotson&rsquo;s student ambassador. Press play and she will tell you what this campaign builds and how to be part of it, in under a minute.</p>
         <details class="ada__transcript reveal">
           <summary>Read what she says</summary>
           <p>Hi, I&rsquo;m Ada. I&rsquo;m Huston-Tillotson&rsquo;s student ambassador, and this hill is my campus. HT has been here since 1875, before Austin was Austin. Today we&rsquo;re a mosaic community of learners, and we&rsquo;re about to build the campus this moment calls for: new student housing, an arena, a new academic home, and scholarships that carry students through their final year. For Such a Time as This is our campaign, and this page is where it starts for you. You can give online in a minute, call the Office of Institutional Advancement, or send a note and tell us where you&rsquo;d like your gift to go. Whatever you choose, thank you for seeing us. We&rsquo;ll see you on the hill.</p>
